@@ -1,0 +1,17 @@
+# Firebase
+.firebase/
+firebase-debug.log
+*-debug.log
+.firebaserc.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Node (if ever added)
+node_modules/
+
+# Secrets — never commit DNS/API credentials
+.porkbun.json
+*.secret

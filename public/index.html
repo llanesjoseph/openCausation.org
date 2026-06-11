@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenCausation.com — Coming Soon</title>
+<meta name="description" content="OpenCausation.com is an introductory gateway to structured medical causation review — how diagnosis–exposure questions are evaluated across timing, mechanism, exposure, objective findings, individual health factors, competing explanations, and documentation quality.">
+<meta name="theme-color" content="#05080d">
+
+<!-- Social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="OpenCausation.com — Coming Soon">
+<meta property="og:description" content="An introductory gateway to structured medical causation review.">
+<meta property="og:image" content="assets/library-bg.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenCausation.com — Coming Soon">
+<meta name="twitter:description" content="An introductory gateway to structured medical causation review.">
+<meta name="twitter:image" content="assets/library-bg.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d1420'/%3E%3Ccircle cx='50' cy='44' r='20' fill='none' stroke='%239fc2e8' stroke-width='6'/%3E%3Cline x1='50' y1='30' x2='50' y2='58' stroke='%239fc2e8' stroke-width='6'/%3E%3Cline x1='36' y1='44' x2='64' y2='44' stroke='%239fc2e8' stroke-width='6'/%3E%3C/svg%3E">
+<style>
+  html, body { margin: 0; padding: 0; background: #05080d; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  @keyframes oc-fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes oc-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes oc-spin { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
+  @keyframes oc-glowpulse { 0%,100% { opacity: 0.25; transform: translate(-50%,-50%) scale(0.92); } 50% { opacity: 0.7; transform: translate(-50%,-50%) scale(1.1); } }
+  @keyframes oc-ping { 0% { opacity: 0; transform: translate(-50%,-50%) scale(0.5); } 12% { opacity: 0.55; } 100% { opacity: 0; transform: translate(-50%,-50%) scale(2.1); } }
+  @keyframes oc-scan { 0% { transform: translateY(-150%); opacity: 0; } 18% { opacity: 0.8; } 82% { opacity: 0.8; } 100% { transform: translateY(150%); opacity: 0; } }
+  .oc-stage { position: relative; height: 100vh; height: 100dvh; width: 100%; overflow: hidden; background: #05080d; font-family: 'Spectral', Georgia, serif; }
+  /* Art box keeps the image's exact aspect ratio and always fits ENTIRELY in the viewport
+     (no cropping of the baked wordmark), centered, scaling up or down with the window. */
+  .oc-art {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: min(100vw, calc(100dvh * 1672 / 941));
+    aspect-ratio: 1672 / 941;
+    container-type: size;
+    background: url('assets/library-bg.png') center / cover no-repeat;
+    z-index: 0; opacity: 0; animation: oc-fade 1.8s ease 0.1s forwards;
+  }
+  /* Glyph overlays live INSIDE the art box, so they track the image at any size.
+     Positions are % of the image; sizes use cqw (1% of art width) so they scale with it. */
+  .oc-glyphs { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0; animation: oc-fade 2s ease 1.4s forwards; }
+  .oc-frame { position: absolute; inset: clamp(16px, 2.4vw, 34px); z-index: 2; border: 1px solid rgba(170,200,235,0.16); pointer-events: none; opacity: 0; animation: oc-fade 2s ease 0.6s forwards; }
+  .oc-status { position: absolute; top: clamp(28px, 4vw, 52px); left: 0; right: 0; z-index: 3; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 0 18px; opacity: 0; animation: oc-rise 1.4s ease 0.9s forwards; }
+  .oc-dot { width: 5px; height: 5px; border-radius: 50%; background: #9fc2e8; box-shadow: 0 0 9px rgba(159,194,232,0.9); }
+  .oc-status span.t { font-size: 11px; letter-spacing: 0.42em; text-transform: uppercase; color: #b9c6d8; font-weight: 500; text-shadow: 0 1px 8px rgba(0,0,0,0.9); }
+  /* Scroll cue at the base of the hero — signals there's readable copy below. */
+  @keyframes oc-bob { 0%,100% { transform: rotate(45deg) translate(0,0); } 50% { transform: rotate(45deg) translate(3px,3px); } }
+  .oc-scrollcue { position: absolute; left: 50%; bottom: clamp(16px, 3vh, 30px); transform: translateX(-50%); z-index: 4; opacity: 0; animation: oc-fade 1.6s ease 1.9s forwards; }
+  .oc-scrollcue i { display: block; width: 15px; height: 15px; border-right: 1.5px solid rgba(185,210,240,0.55); border-bottom: 1.5px solid rgba(185,210,240,0.55); transform: rotate(45deg); animation: oc-bob 2.4s ease-in-out infinite; }
+
+  /* Readable description section below the hero — the copy, set clearly and clinically. */
+  .oc-about { background: #05080d; color: #c4cedb; padding: clamp(60px, 10vh, 120px) 24px clamp(72px, 11vh, 130px); border-top: 1px solid rgba(170,200,235,0.10); }
+  .oc-about-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+  .oc-eyebrow { font-size: 11px; letter-spacing: 0.42em; text-transform: uppercase; color: #7f93ab; margin: 0 0 24px; font-weight: 500; }
+  .oc-lead { font-size: clamp(19px, 2.4vw, 25px); line-height: 1.5; color: #eef2f8; font-weight: 400; margin: 0 0 30px; }
+  .oc-body { font-size: clamp(15px, 1.7vw, 17px); line-height: 1.7; color: #aab6c6; margin: 0 0 22px; font-weight: 300; }
+  .oc-criteria { list-style: none; padding: 0; margin: 0 auto; max-width: 600px; display: flex; flex-wrap: wrap; justify-content: center; gap: 11px 26px; }
+  .oc-criteria li { position: relative; font-size: 15px; color: #d6deea; padding-left: 16px; }
+  .oc-criteria li::before { content: ''; position: absolute; left: 0; top: 0.62em; width: 5px; height: 5px; border-radius: 50%; background: #6f86a3; }
+  .oc-divider { width: 64px; height: 1px; background: linear-gradient(90deg, rgba(159,194,232,0) 0%, rgba(159,194,232,0.4) 50%, rgba(159,194,232,0) 100%); margin: 42px auto 28px; }
+  .oc-note { font-size: 13px; line-height: 1.65; color: #8a97a8; font-weight: 300; margin: 0; }
+
+  /* Respect users who prefer reduced motion: show the final state, no animation.
+     Kill animations everywhere (incl. the perpetual glyph motion) but KEEP transforms,
+     since the art box and glyphs rely on transforms for centering. */
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+    .oc-art, .oc-glyphs, .oc-frame, .oc-status, .oc-scrollcue { opacity: 1 !important; }
+  }
+
+  /* Narrow screens: tighten the wide letter-spacing so the eyebrow/status fit on one line. */
+  @media (max-width: 520px) {
+    .oc-status span.t { letter-spacing: 0.26em; font-size: 10px; }
+    .oc-eyebrow { letter-spacing: 0.26em; }
+  }
+</style>
+</head>
+<body>
+  <div class="oc-stage">
+    <div class="oc-art" role="img" aria-label="A grand library with a holographic console reading OpenCausation.com — Coming Soon — an introductory gateway to structured medical causation review.">
+
+      <!-- ANIMATED HOLOGRAPHIC GLYPHS: overlaid precisely on the baked panel icons.
+           Positions are % of the image; sizes in cqw scale with the art box. -->
+      <div class="oc-glyphs">
+        <!-- STETHOSCOPE: energizing glow + scan shimmer -->
+        <div style="position: absolute; left: 23.0%; top: 39.4%; width: 0; height: 0;">
+          <div style="position: absolute; left: 0; top: 0; width: 4.665cqw; height: 4.665cqw; border-radius: 50%; background: radial-gradient(circle, rgba(120,185,240,0.5) 0%, rgba(120,185,240,0) 68%); animation: oc-glowpulse 3.6s ease-in-out infinite;"></div>
+          <div style="position: absolute; left: 0; top: 0; width: 3.349cqw; height: 3.828cqw; transform: translate(-50%,-50%); overflow: hidden; border-radius: 0.48cqw;">
+            <div style="position: absolute; left: -20%; right: -20%; height: 22%; background: linear-gradient(to bottom, rgba(180,220,255,0) 0%, rgba(190,225,255,0.85) 50%, rgba(180,220,255,0) 100%); filter: blur(1px); animation: oc-scan 3.2s ease-in-out infinite;"></div>
+          </div>
+        </div>
+        <!-- CROSS-IN-CROSSHAIR: rotating ring + ping ripples + pulse -->
+        <div style="position: absolute; left: 23.7%; top: 57.7%; width: 0; height: 0;">
+          <div style="position: absolute; left: 0; top: 0; width: 4.306cqw; height: 4.306cqw; border-radius: 50%; background: radial-gradient(circle, rgba(120,185,240,0.5) 0%, rgba(120,185,240,0) 66%); animation: oc-glowpulse 3.2s ease-in-out infinite 0.4s;"></div>
+          <div style="position: absolute; left: 0; top: 0; width: 3.589cqw; height: 3.589cqw; border-radius: 50%; border: 0.09cqw solid rgba(150,205,250,0.55); border-top-color: rgba(205,235,255,0.95); border-right-color: rgba(150,205,250,0.2); transform: translate(-50%,-50%); animation: oc-spin 7s linear infinite;"></div>
+          <div style="position: absolute; left: 0; top: 0; width: 3.349cqw; height: 3.349cqw; border-radius: 50%; border: 0.06cqw solid rgba(170,215,255,0.7); animation: oc-ping 3.6s ease-out infinite;"></div>
+          <div style="position: absolute; left: 0; top: 0; width: 3.349cqw; height: 3.349cqw; border-radius: 50%; border: 0.06cqw solid rgba(170,215,255,0.7); animation: oc-ping 3.6s ease-out infinite 1.8s;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="oc-frame"></div>
+    <div class="oc-status">
+      <span class="oc-dot"></span>
+      <span class="t">Structured Medical Causation Review</span>
+    </div>
+    <div class="oc-scrollcue" aria-hidden="true"><i></i></div>
+  </div>
+
+  <!-- Readable description: the full copy, set clearly beneath the hero -->
+  <section class="oc-about">
+    <div class="oc-about-inner">
+      <p class="oc-eyebrow">Structured Medical Causation Review</p>
+      <p class="oc-lead">OpenCausation.com is being developed as an introductory gateway for understanding structured medical causation review.</p>
+      <p class="oc-body">The site will provide general information about how diagnosis&ndash;exposure questions are evaluated, including consideration of:</p>
+      <ul class="oc-criteria">
+        <li>Timing</li>
+        <li>Mechanism</li>
+        <li>Exposure details</li>
+        <li>Objective findings</li>
+        <li>Individual health factors</li>
+        <li>Competing explanations</li>
+        <li>Documentation quality</li>
+      </ul>
+      <div class="oc-divider"></div>
+      <p class="oc-note">OpenCausation.com is currently under development. Additional information and resources will be available soon.</p>
+    </div>
+  </section>
+</body>
+</html>
