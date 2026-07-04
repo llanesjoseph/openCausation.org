@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- TOP STRIP -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span></span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Examples</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">The method →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:78px 0 0;">
+      <div><a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a></div>
+      <div style="max-width:760px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Companion — weighing an association</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:60px; line-height:1.05; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">The Bradford Hill viewpoints.</h1>
+        <p style="margin:26px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:24px; line-height:1.45; color:var(--accent,#1E66BA); font-weight:400;">Nine considerations — weighed, never tallied.</p>
+        <p style="margin:22px 0 0; font-size:20px; line-height:1.65; color:#3B4A5E; font-weight:300;">Bradford Hill's nine viewpoints help assess whether an observed association may be causal. They are not a checklist, formula, or scoring system. A causation opinion should not count how many viewpoints are present and then declare a conclusion. Instead, each viewpoint is weighed in context, with attention to the diagnosis, exposure, timing, dose, competing explanations, and quality of the scientific evidence.</p>
+        <p style="margin:20px 0 0; font-size:20px; line-height:1.65; color:#3B4A5E; font-weight:300;">In occupational causation analysis, <a href="#hill-01" style="color:var(--accent,#1E66BA); text-decoration:none; border-bottom:1px solid #B7CFEA;">temporality</a>, <a href="#hill-02" style="color:var(--accent,#1E66BA); text-decoration:none; border-bottom:1px solid #B7CFEA;">strength of association</a>, and <a href="#hill-03" style="color:var(--accent,#1E66BA); text-decoration:none; border-bottom:1px solid #B7CFEA;">dose–response</a> often carry the greatest practical weight. Temporality is essential because exposure must precede the outcome. Strength and dose–response help determine whether the association is large enough and biologically patterned enough to support causation rather than coincidence, background risk, or confounding.</p>
+      </div>
+    </div>
+    <!-- TOC -->
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:44px 0 0;">
+      <div></div>
+      <div style="max-width:760px; border-top:1px solid #0C2547; padding-top:18px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; margin-bottom:16px;">The nine viewpoints</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px 28px;">
+          <a href="#hill-01" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-01</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Temporality</span></a>
+          <a href="#hill-02" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-02</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Strength of association</span></a>
+          <a href="#hill-03" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-03</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Dose–response</span></a>
+          <a href="#hill-04" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-04</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Consistency</span></a>
+          <a href="#hill-05" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-05</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Plausibility</span></a>
+          <a href="#hill-06" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-06</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Alternative explanations</span></a>
+          <a href="#hill-07" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-07</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Experimental evidence</span></a>
+          <a href="#hill-08" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-08</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Specificity</span></a>
+          <a href="#hill-09" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">HILL-09</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Coherence</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-01 -->
+  <section id="hill-01" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-01</div>
+        <div style="display:inline-block; margin-top:10px; font-family:'Archivo',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#FFFFFF; background:var(--accent,#1E66BA); padding:3px 8px;">Key</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Temporality</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">The exposure must occur before the outcome. This is the one essential viewpoint: an exposure cannot cause a condition that already existed before the exposure occurred. However, temporality is never sufficient by itself. The fact that symptoms or a diagnosis followed an event may raise a causation question, but timing alone does not establish cause.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">An individual develops lateral elbow pain after several weeks of forceful repetitive gripping at work. The timing is compatible with causation because the exposure came first. But the analysis must still determine whether the diagnosis is correct, whether the exposure was sufficient, and whether other explanations are more likely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-02 -->
+  <section id="hill-02" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-02</div>
+        <div style="display:inline-block; margin-top:10px; font-family:'Archivo',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#FFFFFF; background:var(--accent,#1E66BA); padding:3px 8px;">Key</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Strength of association</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">The larger the measured association between an exposure and a condition, the more weight it may carry in a causal analysis. A strong association is less likely to be explained entirely by chance, bias, or confounding. A weak association may still be relevant, but it requires more careful evaluation of study quality, alternative explanations, and individual exposure facts.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">If high-quality studies show that a particular exposure is associated with a substantially increased risk of a specific disease, that evidence carries more causal weight than a small or inconsistent increase in risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-03 -->
+  <section id="hill-03" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-03</div>
+        <div style="display:inline-block; margin-top:10px; font-family:'Archivo',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#FFFFFF; background:var(--accent,#1E66BA); padding:3px 8px;">Key</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Dose–response</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">Dose–response asks whether more exposure produces more risk, and whether less exposure produces less risk. This viewpoint is especially important in occupational analysis because a recognized risk factor matters only if the individual's exposure was sufficient in intensity, frequency, duration, and timing.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">If the risk of a condition increases with greater cumulative vibration exposure, longer duration of forceful gripping, or higher levels of a chemical exposure, that pattern supports a causal interpretation. A minimal, brief, or remote exposure may be biologically plausible but still insufficient.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-04 -->
+  <section id="hill-04" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;"><div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-04</div></div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Consistency</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">Consistency asks whether the association has been replicated across different studies, populations, settings, and methods. A finding is more credible when it appears repeatedly in well-designed studies rather than in a single isolated report.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">An association between a workplace exposure and a disease is more persuasive when it is observed in multiple industries, different worker populations, and studies using different research designs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-05 -->
+  <section id="hill-05" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;"><div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-05</div></div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Plausibility</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">Plausibility asks whether the association fits a credible biological, biomechanical, toxicologic, or pathophysiologic mechanism. The proposed cause should make sense in light of what is known about the body, the exposure, and the disease process.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">A high-force twisting injury followed by immediate knee pain and swelling may be biomechanically plausible for certain internal knee injuries. By contrast, a trivial exposure with no plausible mechanism for the claimed structural injury carries less causal weight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-06 -->
+  <section id="hill-06" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;"><div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-06</div></div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Alternative explanations</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">A credible causation analysis must consider other possible causes and competing explanations. The question is not simply whether the claimed exposure could have contributed, but whether it is more probable than other explanations when the full record is considered.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">In an individual with knee osteoarthritis, the analysis should consider age, BMI, prior injury, prior surgery, alignment, genetics, and nonoccupational activity before attributing the condition to work exposure alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-07 -->
+  <section id="hill-07" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;"><div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-07</div></div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Experimental evidence</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">Experimental evidence asks whether altering the exposure changes the outcome. In occupational settings, this may include improvement after exposure reduction, worsening with re-exposure, or prevention of disease when exposure controls are introduced. This can be supportive, but it must be interpreted cautiously because symptoms may improve for many reasons.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">If symptoms improve when a specific exposure is removed and recur when the exposure resumes, that pattern may support causation. If symptoms persist unchanged despite removal of the exposure, the causal inference may be weaker.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-08 -->
+  <section id="hill-08" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;"><div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-08</div></div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Specificity</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">Specificity asks whether a particular exposure is associated with a particular disease. It is generally the weakest Bradford Hill viewpoint because many diseases are multifactorial and many exposures can produce more than one effect. Lack of specificity does not rule out causation, but high specificity can strengthen the analysis.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">A rare disease strongly linked to a specific chemical exposure may have greater specificity. By contrast, low back pain has many occupational and nonoccupational causes, so specificity is usually limited.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HILL-09 -->
+  <section id="hill-09" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="padding-top:8px;"><div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Hill-09</div></div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:30px;">
+        <h2 style="margin:0 0 18px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Coherence</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.7; color:#223349; font-weight:300;">Coherence asks whether the proposed causal relationship is compatible with the existing body of knowledge. The conclusion should fit, rather than contradict, established clinical, epidemiologic, biologic, and occupational evidence.</p>
+        <div style="padding:20px 24px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">Example</div>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#3B4A5E; font-weight:300;">A proposed work-related cause is more credible when it aligns with known disease mechanisms, accepted exposure science, clinical course, and diagnostic findings. A proposed cause that conflicts with established knowledge requires strong supporting evidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIMITING PRINCIPLE -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div></div>
+      <div style="max-width:720px; background:#143C68; padding:44px 48px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#4E96DE; margin-bottom:18px;">The limiting principle</div>
+        <p style="margin:0; font-family:'Spectral',serif; font-size:23px; line-height:1.55; font-weight:300; color:#EAF1F9;">No causal hypothesis is proven with absolute certainty. Scientific analysis tests proposed explanations against the available evidence and is often strongest when excluding unsupported explanations. Sometimes the most defensible conclusion is not a positive causal finding, but a disciplined exclusion<span style="color:#4E96DE;">: the evidence does not support the proposed explanation.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:70px 0 80px;">
+      <a href="The Methodology V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">← Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">The Method</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">The AMA six-step framework.</span>
+      </a>
+      <a href="Legal Standards V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next →</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">The Legal Standards</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Burdens of proof, RR 2.0, and admissibility.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer style="background:#143C68; color:#9DB0C8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org™ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

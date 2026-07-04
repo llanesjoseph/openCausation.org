@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+<div style="{{ themeVars }}">
+
+  <!-- ============ TOP STRIP ============ -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- ============ MASTHEAD NAV ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;">
+          <span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span>
+        </span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Examples</a>
+        <a href="Glossary V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Glossary</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">The method →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:78px 0 0;">
+      <div>
+        <a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a>
+      </div>
+      <div style="max-width:760px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Start here — the conceptual foundation</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:64px; line-height:1.05; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">The fundamentals.</h1>
+        <p style="margin:26px 0 0; font-size:21px; line-height:1.6; color:#3B4A5E; font-weight:300;">Before applying the method, start with the mindset. A credible causation analysis requires more than a conclusion — it requires evidence, disciplined reasoning, and awareness of the limits of what the facts can support. This section introduces four foundational ideas that separate a scientifically credible analysis from assumption, advocacy, or unsupported opinion.</p>
+      </div>
+    </div>
+    <!-- in this section -->
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:40px 0 0;">
+      <div></div>
+      <div style="max-width:760px; border-top:1px solid #0C2547; padding-top:18px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; margin-bottom:16px;">In this section — four ideas</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px 36px;">
+          <sc-for list="{{ toc }}" as="i" hint-placeholder-count="4">
+            <a href="{{ i.href }}" style="display:flex; align-items:baseline; gap:14px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);">
+              <span style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">{{ i.num }}</span>
+              <span style="font-family:'Spectral',serif; font-size:17px; color:#3B4A5E;">{{ i.label }}</span>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §01 WHAT IT IS ============ -->
+  <section id="what" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:84px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">FND-01</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">What causation analysis is — and is not</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:36px;">
+        <h2 style="margin:0 0 26px; font-family:'Spectral',serif; font-size:38px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Why causation demands science.</h2>
+        <p style="margin:0 0 22px; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">Few questions in medicine carry as much consequence for an individual, an employer, an insurer, and society. The answer may determine who pays, who is held responsible, what care is authorized, and whether the result is fair. A question of that weight deserves a disciplined, transparent, and reproducible method. It deserves science.</p>
+        <p style="margin:0 0 22px; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">Causation analysis is not a matter of intuition, sympathy, or professional reputation. It is a structured inquiry grounded in objective facts, published scientific literature, and sound clinical reasoning. Performed well, it produces conclusions that another qualified evaluator, reviewing the same records and the same science, could independently understand and test. Performed poorly, it produces opinions that vary from one examiner to the next — untethered from evidence and vulnerable to bias.</p>
+        <figure style="margin:34px 0; padding:4px 0 4px 28px; border-left:2px solid var(--accent,#1E66BA);">
+          <p style="margin:0; font-family:'Spectral',serif; font-style:italic; font-size:25px; line-height:1.4; font-weight:400; color:#0C2547;">Diagnosis asks what is wrong. Causation asks what is responsible. They are not the same question.</p>
+        </figure>
+        <p style="margin:0 0 22px; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">Determining causation is fundamentally different from diagnosing an individual, planning treatment, estimating prognosis, or rating impairment. A fracture may be treated the same way whether it occurred at work or at home. Causation, by contrast, is a forensic question that asks whether a condition should be attributed to a claimed exposure under the applicable legal or administrative standard.</p>
+        <p style="margin:0; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">Because the question is forensic, disputed causation analysis should be conducted with independence. Treating clinicians provide essential observations about history, examination, diagnosis, treatment, and clinical course, but they may face practical, therapeutic, financial, or social pressures when asked to render causation opinions for individuals they are treating. The therapeutic role and the forensic role have different purposes. When causation is disputed, the analysis is best performed as an independent, evidence-based assessment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §02 FACT NOT OPINION ============ -->
+  <section id="fact" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:84px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">FND-02</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Evidence first: fact, not opinion</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:36px;">
+        <h2 style="margin:0 0 26px; font-family:'Spectral',serif; font-size:38px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The single most important distinction.</h2>
+        <p style="margin:0 0 22px; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">Science is a systematic method of searching for, testing, and verifying facts. It values reproducible, evidence-based observation over individual belief. A scientific finding does not depend on who first reported it; if it can be independently verified, the identity or credentials of the person who introduced it should not determine its value.</p>
+        <p style="margin:0 0 22px; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">Legal and administrative systems often operate differently. They rely heavily on expert opinion, which can sometimes elevate confidence, credentials, convenience, or presentation above independently verifiable fact. A clinician trained in the scientific tradition can be drawn, almost without noticing, into offering opinions based on personal experience rather than evidence-based method. A structured causation method is one of the best protections against that drift.</p>
+        <figure style="margin:34px 0; padding:28px 30px; background:#E8F1FB;">
+          <p style="margin:0; font-family:'Spectral',serif; font-style:italic; font-size:25px; line-height:1.42; font-weight:400; color:#0C2547;">It helps the evaluator approach the analysis as <span style="color:var(--accent,#1E66BA);">a disciplined medical and scientific inquiry, rather than as unsupported opinion or advocacy.</span></p>
+        </figure>
+        <p style="margin:0; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">This is not a criticism of clinical judgment, which remains essential. It is a discipline placed around that judgment, so the conclusion rests on something more durable than the confidence of the person stating it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §03 STANDARD OF PROOF ============ -->
+  <section id="proof" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:84px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">FND-03</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The standard of proof</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:36px;">
+        <h2 style="margin:0 0 26px; font-family:'Spectral',serif; font-size:38px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Reasonable medical probability.</h2>
+        <p style="margin:0 0 22px; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">In most workers' compensation and disability settings, causation is commonly judged by whether the relationship is more likely than not — often described medically as a reasonable degree of medical probability. Terminology varies by jurisdiction, including preponderance of the evidence, reasonable medical probability, reasonable medical certainty, or more probable than not. The practical threshold is usually whether the causal relationship is more probable than its absence.</p>
+        <!-- probable vs possible figure -->
+        <div style="margin:32px 0; border:1px solid #D7E2EF; background:#EFF4FA; padding:26px 28px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-bottom:18px;">The line that matters</div>
+          <div style="position:relative; height:46px; border:1px solid #CDD9E8; background:linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, var(--accent-tint,#DEEAF6) 50%, var(--accent-tint,#DEEAF6) 100%);">
+            <div style="position:absolute; left:50%; top:-6px; bottom:-6px; width:2px; background:var(--accent,#1E66BA);"></div>
+            <div style="position:absolute; left:14px; top:50%; transform:translateY(-50%); font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:#8B97A9;">Possible</div>
+            <div style="position:absolute; right:14px; top:50%; transform:translateY(-50%); font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA);">Probable</div>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-top:10px; font-family:'Archivo',sans-serif; font-size:11.5px; color:#8B97A9; font-weight:400;"><span>Possible does not equal established</span><span style="color:var(--accent,#1E66BA); font-weight:600;">More likely than not begins here</span></div>
+          <div style="display:flex; justify-content:center; margin-top:10px;"><span style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.06em; color:var(--accent,#1E66BA);">50% &middot; more probable than its absence</span></div>
+        </div>
+        <p style="margin:0; font-size:19px; line-height:1.72; color:#223349; font-weight:300;">This standard requires the evaluator to distinguish carefully between what is <em style="font-style:italic; color:#0C2547;">probable</em> and what is merely <em style="font-style:italic; color:#0C2547;">possible.</em> A factor may be biologically plausible, temporally associated, or statistically linked at a low level without satisfying the standard of reasonable medical probability. The fact that a causal relationship cannot be excluded does not mean it has been established. Confusing possibility with probability is one of the most common and consequential errors in causation analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §04 TRAPS ============ -->
+  <section id="traps" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:84px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">FND-04</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Common pitfalls to avoid</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:36px;">
+        <h2 style="margin:0 0 12px; font-family:'Spectral',serif; font-size:38px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Four common patterns that lead to flawed causation opinions.</h2>
+        <p style="margin:0 0 32px; font-size:19px; line-height:1.7; color:#3B4A5E; font-weight:300;">Most flawed causation opinions fail in recognizable ways. Naming the pattern makes it easier to avoid the error.</p>
+        <sc-for list="{{ traps }}" as="t" hint-placeholder-count="4">
+          <div style="display:grid; grid-template-columns:42px 1fr; gap:22px; padding:24px 0; border-top:1px solid #D7E2EF; align-items:start;">
+            <span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); padding-top:5px;">{{ t.num }}</span>
+            <div>
+              <h3 style="margin:0 0 9px; font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">{{ t.title }}</h3>
+              <p style="margin:0; font-size:17px; line-height:1.6; color:#566579; font-weight:300;">{{ t.desc }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTINUE / CROSS-LINKS ============ -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:84px 0 0;">
+      <div></div>
+      <div style="max-width:720px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <a href="OpenCausation Home V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+            <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">← Previous</span>
+            <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Home</span>
+            <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">The science of causation — overview.</span>
+          </a>
+          <a href="The Methodology V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+            <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next →</span>
+            <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">The Methodology</span>
+            <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">AMA Causation Framework.</span>
+          </a>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;">
+          <a href="Bradford Hill V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:22px 24px; display:block;" style-hover="border-color:var(--accent,#1E66BA);">
+            <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-bottom:7px;">Related</div>
+            <div style="font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Bradford Hill →</div>
+          </a>
+          <a href="Legal Standards V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:22px 24px; display:block;" style-hover="border-color:var(--accent,#1E66BA);">
+            <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-bottom:7px;">Related</div>
+            <div style="font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Legal Standards →</div>
+          </a>
+        </div>
+        <p style="margin:30px 0 0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.7; color:#8894A6; font-weight:400;">Adapted from <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: Principles and Best Practices for Determining Injury and Disease Relatedness</em> and <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: An Introduction to Biostatistics</em> — foundational educational source documents for OpenCausation.org™ — by J. Mark Melhorn, MD.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#143C68; color:#9DB0C8; margin-top:90px;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org™ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Causation Blue&quot;,&quot;Deep Navy&quot;,&quot;Bright&quot;],&quot;default&quot;:&quot;Causation Blue&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accentThemes = {
+      'Causation Blue': ['#1E66BA', '#063672', '#DEEAF6'],
+      'Deep Navy':      ['#063672', '#062A5A', '#DEEAF6'],
+      'Bright':         ['#367EDE', '#1E66BA', '#DEEAF6'],
+    };
+    const themeName = this.props.accentTheme || 'Causation Blue';
+    const [a, d, t] = accentThemes[themeName] || accentThemes['Causation Blue'];
+    const themeVars = `--accent:${a}; --accent-deep:${d}; --accent-tint:${t};`;
+
+    const toc = [
+      ['01', 'What causation analysis is — and is not', '#what'],
+      ['02', 'Evidence first: fact, not opinion', '#fact'],
+      ['03', 'The standard of proof', '#proof'],
+      ['04', 'Common pitfalls to avoid', '#traps'],
+    ].map(i => ({ num: i[0], label: i[1], href: i[2] }));
+
+    const traps = [
+      ['TRAP-01', 'Failure to use a reliable methodology', 'A causation opinion is most vulnerable when it is not grounded in an established, transparent method. Under a Daubert-type analysis, the opinion must be more than a conclusion; it must show how the evaluator moved from facts, to reasoning, to a medically supportable determination. A structured analysis demonstrates that the conclusion is evidence-based, reproducible, and capable of withstanding forensic scrutiny.'],
+      ['TRAP-02', 'Post hoc, ergo propter hoc', 'The rooster\u2019s crow does not make the sun rise. The fact that a condition followed an event may raise a causation question, but timing alone cannot establish cause. An opinion based primarily on \u201Cthe individual did not have this before the event\u201D rests on this fallacy.'],
+      ['TRAP-03', 'Over-reliance on self-report', 'Causation opinions are often grounded in an examinee\u2019s statement that they were symptom-free before the event. Such histories are frequently contradicted by the pre-claim record. Uncorroborated histories should be treated with caution, tested against the available evidence, and clearly qualified when support is limited.'],
+      ['TRAP-04', 'Forced Binary Decision / Premature Yes-or-No Classification', 'Administrative systems often demand a simple yes-or-no answer on relatedness before the clinical course is complete or the evidence is fully developed. Resist premature classification. Once an early unsupported conclusion enters the record, it may persist for the life of the claim.'],
+    ].map(x => ({ num: x[0], title: x[1], desc: x[2] }));
+
+    return { themeVars, toc, traps };
+  }
+}
+</script>
+</body>
+</html>

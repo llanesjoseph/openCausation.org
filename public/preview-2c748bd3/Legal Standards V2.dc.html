@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- TOP STRIP -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span></span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">The Legal Standards</a>
+        <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Examples</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">The method →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:78px 0 0;">
+      <div><a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a></div>
+      <div style="max-width:760px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Companion — where science meets law</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:58px; line-height:1.06; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">Legal standards of causation.</h1>
+        <p style="margin:24px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:22px; line-height:1.5; color:var(--accent,#1E66BA); font-weight:400;">Burdens of proof, the relative-risk 2.0 threshold, and the admissibility of expert testimony.</p>
+        <p style="margin:22px 0 0; font-size:20px; line-height:1.65; color:#3B4A5E; font-weight:300;">The science of causation produces probabilities; the law requires decisions. This section explains the legal standards that translate one into the other — the burden of proof, the relative-risk threshold courts use to define causation, and the rules that govern whether an expert's causation opinion may even be heard. It is written for physicians, attorneys, and claims professionals, and favors no party.</p>
+        <div style="margin:28px 0 0; padding:16px 22px; background:#EFF4FA; border:1px solid #D7E2EF; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.65; color:#566579;"><strong style="color:#0C2547; font-weight:600;">Educational, not legal advice.</strong> Legal standards vary by jurisdiction and change frequently. The standards described here are illustrative of the framework, not a substitute for the controlling law of a given forum. Nothing on this page is legal advice.</div>
+      </div>
+    </div>
+    <!-- TOC -->
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:44px 0 0;">
+      <div></div>
+      <div style="max-width:760px; border-top:1px solid #0C2547; padding-top:18px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; margin-bottom:16px;">In this section</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px 32px;">
+          <a href="#meet" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-01</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Where law and science meet</span></a>
+          <a href="#burden" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-02</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">The burden of proof</span></a>
+          <a href="#jurisdiction" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-03</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Jurisdictional variations</span></a>
+          <a href="#rr" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-04</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">The relative-risk 2.0 threshold</span></a>
+          <a href="#admissibility" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-05</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Admissibility: Frye &amp; Daubert</span></a>
+          <a href="#glance" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-06</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Frye and Daubert at a glance</span></a>
+          <a href="#survives" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-07</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Why the method survives Daubert</span></a>
+          <a href="#distinctions" style="display:flex; align-items:baseline; gap:12px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);"><span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">LAW-08</span><span style="font-family:'Spectral',serif; font-size:16px; color:#3B4A5E;">Key distinctions</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-01 -->
+  <section id="meet" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-01</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Where law and science meet</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Two worlds, one question.</h2>
+        <p style="margin:0 0 20px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">Science and the law approach causation differently, and understanding the gap between them prevents most errors at the boundary. Science describes populations and speaks in probabilities; it can rarely say that a given exposure caused a given individual's disease with certainty. The law, by contrast, must reach a decision — yes or no, compensable or not — and it has built standards to convert scientific probability into a usable legal answer.</p>
+        <p style="margin:0; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">A causation analysis that is beautifully reasoned in scientific terms can still be rejected by a court, and a legally sufficient opinion can rest on thin science. The remedy is not to choose one world over the other but to understand both: to perform the science rigorously and then to express it in the legal terms the forum requires. The standards below are the vocabulary of that translation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-02 -->
+  <section id="burden" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-02</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The burden of proof</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">&ldquo;More likely than not.&rdquo;</h2>
+        <p style="margin:0 0 26px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">In most workers' compensation and disability systems the claimant must prove causation by a standard usually summarized as &ldquo;more likely than not&rdquo; — greater than 50% probability. The precise statutory wording varies, and the subtle differences can matter, but the general concept is consistent across the common formulations:</p>
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4; text-align:left;">
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:36%;">Standard</th>
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:14%;">Abbrev.</th>
+              <th style="padding:0 0 10px; border-bottom:1.5px solid #0C2547;">Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; color:#0C2547; font-weight:500; vertical-align:top;">More probable than not</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); vertical-align:top;">MPTN</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-size:15.5px; line-height:1.6; color:#3B4A5E; font-weight:300; vertical-align:top;">The causal link is more likely than not — a probability greater than 50%.</td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; color:#0C2547; font-weight:500; vertical-align:top;">Preponderance of the evidence</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); vertical-align:top;">POTE</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-size:15.5px; line-height:1.6; color:#3B4A5E; font-weight:300; vertical-align:top;">The greater weight of the evidence favors causation; functionally &ldquo;more likely than not.&rdquo;</td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; color:#0C2547; font-weight:500; vertical-align:top;">Reasonable degree of medical probability</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); vertical-align:top;">RDOMP</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-size:15.5px; line-height:1.6; color:#3B4A5E; font-weight:300; vertical-align:top;">The medical opinion is held to a probability standard — more likely than not.</td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; color:#0C2547; font-weight:500; vertical-align:top;">Reasonable degree of medical certainty</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); vertical-align:top;">RDOMC</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-size:15.5px; line-height:1.6; color:#3B4A5E; font-weight:300; vertical-align:top;">A stricter-sounding phrase, but generally interpreted as at least a preponderance — not absolute certainty.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin:10px 0 26px; font-family:'Archivo',sans-serif; font-size:12.5px; color:#8894A6;">The four common threshold formulations. Different words; the same underlying &ldquo;more likely than not&rdquo; concept.</p>
+        <p style="margin:0; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">The phrase &ldquo;reasonable degree of medical certainty&rdquo; often misleads. It does not require certainty in the ordinary sense; courts generally interpret it to mean at least a preponderance of the evidence — more likely than not — and explicitly not absolute or unequivocal proof. Whatever the wording, the evaluator's task is the same: to distinguish what is <em style="color:#0C2547;">probable</em> from what is merely <em style="color:#0C2547;">possible</em>, and to opine only to the level the evidence supports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-03 -->
+  <section id="jurisdiction" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-03</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Jurisdictional variations</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Variations that change the answer.</h2>
+        <p style="margin:0 0 28px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">Beyond the common threshold, jurisdictions add requirements that can change the outcome for identical facts. A competent analysis identifies the controlling standard before forming a conclusion.</p>
+        <div style="border-top:1px solid #D7E2EF; padding:22px 0; display:grid; grid-template-columns:1fr; gap:8px;">
+          <h3 style="margin:0; font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Prevailing factor and major contributing cause</h3>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">A number of states require that the work exposure be more than merely a contributing cause — it must be the primary or prevailing factor. Missouri's law defines the &ldquo;prevailing factor&rdquo; as the primary factor, in relation to any other factor, causing both the resulting medical condition and the disability. Kansas adopted a similar prevailing-factor test in 2011, and Florida requires the work injury to be the major contributing cause (greater than 50% contributory) with significant objective findings. Oklahoma's reform tied its &ldquo;major cause&rdquo; requirement directly to Daubert-based proof. These standards demand apportionment-grade analysis, not a simple yes or no.</p>
+        </div>
+        <div style="border-top:1px solid #D7E2EF; padding:22px 0; display:grid; grid-template-columns:1fr; gap:8px;">
+          <h3 style="margin:0; font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Aggravation versus exacerbation</h3>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">The distinction is consequential and jurisdiction-specific. In Texas, for example, an aggravation that permanently worsens an underlying condition may be a compensable, work-related injury, whereas an exacerbation — a temporary worsening of symptoms such as pain that does not change the underlying condition — may support temporary treatment but, because there is no permanent change, no permanent indemnity. Using these terms precisely is part of a credible opinion.</p>
+        </div>
+        <div style="border-top:1px solid #D7E2EF; padding:22px 0; display:grid; grid-template-columns:1fr; gap:8px;">
+          <h3 style="margin:0; font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Any-contribution standards and claimant presumptions</h3>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">Some systems apply a lower bar, under which any work contribution may be compensable, typically with apportionment. Others build in presumptions favoring the claimant: under the Longshore and Harbor Workers' Compensation Act, if the evidence is balanced, the presumption favors the claimant; Hawaii presumes compensability unless the employer rebuts it by substantial evidence. None of this changes the science — it changes the legal threshold the science must clear.</p>
+        </div>
+        <div style="border-top:1px solid #D7E2EF; padding:22px 0 0; display:grid; grid-template-columns:1fr; gap:8px;">
+          <h3 style="margin:0; font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">The constant: standards are in flux</h3>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">Legal thresholds for causation change frequently through legislation and case law. The same state may use one phrase one year and another the next, and a newly enacted standard often awaits clarification through appellate decisions. An evaluator should confirm the current controlling standard rather than rely on memory or precedent from another matter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-04 -->
+  <section id="rr" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-04</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The relative-risk 2.0 threshold</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Where epidemiology meets the 50% line.</h2>
+        <p style="margin:0 0 26px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">The clearest bridge between epidemiology and the more-likely-than-not standard is the relative-risk doubling rule. Relative risk (RR) is the ratio of disease in an exposed group to disease in the general population. When RR reaches 2.0, more than half of the disease occurring in exposed individuals is attributable to the exposure — which, for an individual case, satisfies the greater-than-50% threshold. This is why an RR of at least 2.0 has been used by courts to establish &ldquo;legal&rdquo; causation.</p>
+        <p style="margin:0 0 26px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">The logic is the excess fraction, <span style="font-family:'Archivo',sans-serif; font-size:15.5px; background:#E8F1FB; padding:2px 8px; color:var(--accent-deep,#063672);">(RR − 1) / RR</span>, which gives the probability that an exposed person's disease is attributable to the exposure:</p>
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4; text-align:left;">
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:24%;">Relative risk</th>
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:38%;">Excess fraction (RR−1)/RR</th>
+              <th style="padding:0 0 10px; border-bottom:1.5px solid #0C2547;">Meets &ldquo;more likely than not&rdquo;?</th>
+            </tr>
+          </thead>
+          <tbody style="font-size:15.5px; color:#3B4A5E;">
+            <tr><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-weight:600; color:#0C2547;">1.1</td><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:300;">≈ 9%</td><td style="padding:11px 0; border-bottom:1px solid #E5EEF7; font-weight:300; color:#8894A6;">No</td></tr>
+            <tr><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-weight:600; color:#0C2547;">1.5</td><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:300;">≈ 33%</td><td style="padding:11px 0; border-bottom:1px solid #E5EEF7; font-weight:300; color:#8894A6;">No</td></tr>
+            <tr style="background:#E8F1FB;"><td style="padding:11px 12px 11px 8px; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-weight:700; color:var(--accent-deep,#063672);">2.0</td><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:500; color:var(--accent-deep,#063672);">50% (the pivot)</td><td style="padding:11px 8px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:500; color:var(--accent,#1E66BA);">At the threshold</td></tr>
+            <tr><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-weight:600; color:#0C2547;">2.5</td><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:300;">60%</td><td style="padding:11px 0; border-bottom:1px solid #E5EEF7; font-weight:300; color:#166B47;">Yes</td></tr>
+            <tr><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-weight:600; color:#0C2547;">3.0</td><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:300;">≈ 67%</td><td style="padding:11px 0; border-bottom:1px solid #E5EEF7; font-weight:300; color:#166B47;">Yes</td></tr>
+            <tr><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-weight:600; color:#0C2547;">4.0</td><td style="padding:11px 12px 11px 0; border-bottom:1px solid #E5EEF7; font-weight:300;">75%</td><td style="padding:11px 0; border-bottom:1px solid #E5EEF7; font-weight:300; color:#166B47;">Yes</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:10px 0 28px; font-family:'Archivo',sans-serif; font-size:12.5px; color:#8894A6;">Below RR 2.0, the exposure more likely than not did not cause the individual's disease; at and above 2.0, it more likely than not did.</p>
+        <div style="background:#EFF4FA; border:1px solid #D7E2EF; padding:26px 30px; margin-bottom:28px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:16px;">Hold three things together honestly</div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <p style="margin:0; font-size:16px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">A legal line, not a scientific one.</strong> The RR ≥ 2.0 threshold was selected from common law, not derived from epidemiology.</p>
+            <p style="margin:0; font-size:16px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Epidemiologists read it cautiously.</strong> Many regard an RR below 3 as &ldquo;weak&rdquo; evidence, especially from case-control studies. RR 2.0 is a legal bright line, not a scientific certainty.</p>
+            <p style="margin:0; font-size:16px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Below 2.0 can still matter.</strong> In any-contribution jurisdictions, a factor with RR &lt; 2.0 may still receive a small apportionment — &ldquo;minimal causation,&rdquo; much less than 50%.</p>
+          </div>
+        </div>
+        <h3 style="margin:0 0 16px; font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547;">The case lineage behind the rule</h3>
+        <p style="margin:0 0 24px; font-size:17px; line-height:1.68; color:#3B4A5E; font-weight:300;">The 2.0 threshold did not arise in a single decision; it accreted across decades of toxic-tort and product-liability litigation in which courts wrestled with how epidemiologic risk translates into individual causation. The AMA Guides Causation text catalogs the supporting cases (Table 4-1) across several domains:</p>
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4; text-align:left;">
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:32%;">Litigation domain</th>
+              <th style="padding:0 0 10px; border-bottom:1.5px solid #0C2547;">Representative cases</th>
+            </tr>
+          </thead>
+          <tbody style="font-size:15px; line-height:1.6; color:#3B4A5E;">
+            <tr><td style="padding:12px 12px 12px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16px; font-weight:500; color:#0C2547; vertical-align:top;">Radiation</td><td style="padding:12px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>Johnston v. United States</em> (D. Kan. 1984); <em>In re Hanford Nuclear Reservation Litigation</em> (E.D. Wash. 1998)</td></tr>
+            <tr><td style="padding:12px 12px 12px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16px; font-weight:500; color:#0C2547; vertical-align:top;">Swine flu – Guillain-Barré</td><td style="padding:12px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>Cook v. United States</em> (N.D. Cal. 1982); <em>Padgett v. United States</em> (W.D. Tex. 1982); <em>Manko v. United States</em> (W.D. Mo. 1986)</td></tr>
+            <tr><td style="padding:12px 12px 12px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16px; font-weight:500; color:#0C2547; vertical-align:top;">IUD – pelvic inflammatory disease</td><td style="padding:12px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>Marder v. G.D. Searle &amp; Co.</em> (D. Md. 1986)</td></tr>
+            <tr><td style="padding:12px 12px 12px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16px; font-weight:500; color:#0C2547; vertical-align:top;">Bendectin</td><td style="padding:12px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>DeLuca v. Merrell Dow</em> (3d Cir. 1990); <em>Daubert v. Merrell Dow</em> (9th Cir. 1995); <em>Merrell Dow v. Havner</em> (Tex. 1997)</td></tr>
+            <tr><td style="padding:12px 12px 12px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16px; font-weight:500; color:#0C2547; vertical-align:top;">Silicone breast implants</td><td style="padding:12px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>Hall v. Baxter Healthcare</em> (D. Ore. 1996); <em>Allison v. McGhan Medical</em> (11th Cir. 1999); <em>Norris v. Baxter Healthcare</em> (10th Cir. 2005)</td></tr>
+            <tr><td style="padding:12px 12px 12px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16px; font-weight:500; color:#0C2547; vertical-align:top;">Asbestos</td><td style="padding:12px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>Landrigan v. Celotex Corp.</em> (N.J. 1992); <em>Caterinicchio v. Pittsburgh Corning</em> (N.J. 1992)</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:10px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; color:#8894A6;">Selected cases from Table 4-1 of the AMA Guides Causation text. The lineage is illustrative of the doubling-of-risk concept, not an exhaustive or current statement of law in any jurisdiction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-05 -->
+  <section id="admissibility" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-05</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Admissibility</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Whether the opinion is even heard.</h2>
+        <p style="margin:0 0 28px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">Before a court weighs a causation opinion, it must decide whether to admit it at all. Two traditions govern that gatekeeping decision, and which one applies depends on the forum.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:28px;">
+          <div style="border:1px solid #D7E2EF; background:#FFFFFF; padding:26px 28px;">
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; margin-bottom:10px;">The Frye test · 1923</div>
+            <p style="margin:0; font-size:15.5px; line-height:1.66; color:#3B4A5E; font-weight:300;">In <em>Frye v. United States</em>, a federal appeals court held that expert evidence is admissible only if the principle or technique on which it rests has gained <strong style="color:#0C2547; font-weight:500;">general acceptance</strong> in the relevant scientific community. Frye locates the decision not in the court but in the scientific field itself: the question is whether the method is generally accepted, not whether the judge finds it persuasive. A number of states still follow Frye or a Frye-derived standard.</p>
+          </div>
+          <div style="border:1px solid #D7E2EF; background:#FFFFFF; padding:26px 28px;">
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">The Daubert test · 1993</div>
+            <p style="margin:0; font-size:15.5px; line-height:1.66; color:#3B4A5E; font-weight:300;">In <em>Daubert v. Merrell Dow Pharmaceuticals</em> — itself a Bendectin birth-defect case — the U.S. Supreme Court held that, under Federal Rule of Evidence 702, the trial judge serves as a <strong style="color:#0C2547; font-weight:500;">gatekeeper</strong> who must ensure that expert testimony both rests on a reliable scientific foundation and is relevant to the issue (the &ldquo;fit&rdquo; requirement). Daubert governs the federal courts and has been adopted by many states; the analysis is more demanding than Frye because the judge must engage with the methodology itself.</p>
+          </div>
+        </div>
+        <p style="margin:0 0 20px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">The Court offered an illustrative, non-exhaustive list of factors for assessing reliability:</p>
+        <div style="display:flex; flex-direction:column; gap:0; margin-bottom:28px;">
+          <div style="display:grid; grid-template-columns:42px 1fr; gap:18px; padding:16px 0; border-top:1px solid #E5EEF7;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); padding-top:3px;">01</span><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Testability.</strong> Whether the theory or technique can be (and has been) tested.</p></div>
+          <div style="display:grid; grid-template-columns:42px 1fr; gap:18px; padding:16px 0; border-top:1px solid #E5EEF7;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); padding-top:3px;">02</span><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Peer review and publication.</strong> Whether it has been subjected to peer review and publication.</p></div>
+          <div style="display:grid; grid-template-columns:42px 1fr; gap:18px; padding:16px 0; border-top:1px solid #E5EEF7;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); padding-top:3px;">03</span><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Known or potential error rate.</strong> Whether the error rate of the technique is known and acceptable.</p></div>
+          <div style="display:grid; grid-template-columns:42px 1fr; gap:18px; padding:16px 0; border-top:1px solid #E5EEF7; border-bottom:1px solid #E5EEF7;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); padding-top:3px;">04</span><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">General acceptance.</strong> Whether it is generally accepted in the relevant scientific community — Frye's question, preserved as one factor among several.</p></div>
+        </div>
+        <div style="padding:24px 28px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">The factor that decides many causation cases</div>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">Beyond the four listed factors, the Daubert courts added a pivotal consideration: whether the expert's research and methods were <strong style="color:#0C2547; font-weight:500;">developed independently of the litigation</strong>, or instead generated specifically for the case at hand. Opinions built on reasoning created only for the lawsuit — never published, never independently reviewed — are viewed with particular skepticism. This is one reason a causation analysis grounded in the pre-existing, published scientific literature is far more durable than one improvised for the case.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-06 -->
+  <section id="glance" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-06</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">At a glance</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Frye and Daubert, side by side.</h2>
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; text-align:left;">
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:24%; color:#93A2B4;"></th>
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:35%; color:#566579;">Frye (1923)</th>
+              <th style="padding:0 0 10px; border-bottom:1.5px solid #0C2547; color:var(--accent,#1E66BA);">Daubert (1993)</th>
+            </tr>
+          </thead>
+          <tbody style="font-size:15px; line-height:1.58; color:#3B4A5E;">
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:#93A2B4; vertical-align:top;">Core question</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Is the method generally accepted in the field?</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Is the method reliable and relevant (does it &ldquo;fit&rdquo;)?</td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:#93A2B4; vertical-align:top;">Who decides</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">The scientific community, in effect</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">The trial judge, as gatekeeper</td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:#93A2B4; vertical-align:top;">Key authority</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;"><em>Frye v. United States</em></td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">FRE 702; <em>Daubert v. Merrell Dow</em></td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:#93A2B4; vertical-align:top;">Reliability factors</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">General acceptance only</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Testability, peer review, error rate, general acceptance, + litigation independence</td>
+            </tr>
+            <tr>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:#93A2B4; vertical-align:top;">Where it applies</td>
+              <td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Some states</td>
+              <td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Federal courts and many states</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin:10px 0 24px; font-family:'Archivo',sans-serif; font-size:12.5px; color:#8894A6;">Many jurisdictions have moved from Frye to Daubert; some retain Frye. The applicable test is determined by the forum.</p>
+        <p style="margin:0; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">Two later Supreme Court decisions are commonly grouped with Daubert as the &ldquo;Daubert trilogy&rdquo;: <em style="color:#0C2547;">General Electric Co. v. Joiner</em> (review of admissibility decisions for abuse of discretion) and <em style="color:#0C2547;">Kumho Tire Co. v. Carmichael</em> (extending the gatekeeping function to all expert testimony, not only the strictly scientific). Together they reinforce that the methodology behind an opinion — not merely the credentials of the witness — determines whether it is heard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-07 -->
+  <section id="survives" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-07</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Method meets gatekeeping</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Why a disciplined methodology survives Daubert.</h2>
+        <p style="margin:0 0 26px; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">The structured causation method set out in the base reference is, in effect, engineered to satisfy these admissibility standards. It is not a coincidence; a method built to be transparent and reproducible is also a method built to withstand gatekeeping.</p>
+        <div style="display:flex; flex-direction:column;">
+          <div style="padding:16px 0; border-top:1px solid #E5EEF7;"><p style="margin:0; font-size:16.5px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Testable and tested.</strong> The six-step framework and the evidence-rating system are explicit procedures that can be examined, applied by others, and checked.</p></div>
+          <div style="padding:16px 0; border-top:1px solid #E5EEF7;"><p style="margin:0; font-size:16.5px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Peer-reviewed and published.</strong> The method derives from NIOSH and ACOEM work and from the published, peer-reviewed scientific literature — not from reasoning invented for a particular case.</p></div>
+          <div style="padding:16px 0; border-top:1px solid #E5EEF7;"><p style="margin:0; font-size:16.5px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Error rate acknowledged.</strong> The strength-of-evidence scheme states its limits openly, distinguishing strong, some, insufficient, conflicted, and not-studied evidence rather than projecting false certainty.</p></div>
+          <div style="padding:16px 0; border-top:1px solid #E5EEF7;"><p style="margin:0; font-size:16.5px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Generally accepted.</strong> The Bradford Hill criteria and the epidemiologic methods underlying the analysis are the accepted framework of the field.</p></div>
+          <div style="padding:16px 0; border-top:1px solid #E5EEF7; border-bottom:1px solid #E5EEF7;"><p style="margin:0; font-size:16.5px; line-height:1.62; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:500;">Independent of the litigation.</strong> Because conclusions rest on pre-existing published evidence applied through a standard method, they are not vulnerable to the central Daubert objection that the science was manufactured for the case.</p></div>
+        </div>
+        <p style="margin:26px 0 0; font-size:18.5px; line-height:1.72; color:#223349; font-weight:300;">An opinion produced this way can be expressed in whatever legal threshold the forum requires — more likely than not, prevailing factor, major contributing cause — while remaining anchored to the same underlying science. That is the practical payoff of method: it is both better science and more durable law.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW-08 -->
+  <section id="distinctions" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:80px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Law-08</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Key distinctions</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 24px; font-family:'Spectral',serif; font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The vocabulary, precisely.</h2>
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4; text-align:left;">
+              <th style="padding:0 12px 10px 0; border-bottom:1.5px solid #0C2547; width:34%;">Term</th>
+              <th style="padding:0 0 10px; border-bottom:1.5px solid #0C2547;">What it means here</th>
+            </tr>
+          </thead>
+          <tbody style="font-size:15.5px; line-height:1.62; color:#3B4A5E;">
+            <tr><td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; font-weight:500; color:#0C2547; vertical-align:top;">Possibility vs. probability</td><td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Possible = the exposure could have contributed; probable = more likely than not (&gt;50%). Only probability meets the standard.</td></tr>
+            <tr><td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; font-weight:500; color:#0C2547; vertical-align:top;">Medical certainty vs. probability</td><td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">&ldquo;Reasonable degree of medical certainty&rdquo; is generally interpreted as a preponderance — not literal certainty.</td></tr>
+            <tr><td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; font-weight:500; color:#0C2547; vertical-align:top;">General vs. specific causation</td><td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">General = the exposure can cause the condition (population science); specific = it did cause it in this person (the individual case).</td></tr>
+            <tr><td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; font-weight:500; color:#0C2547; vertical-align:top;">Aggravation vs. exacerbation</td><td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Aggravation = a permanent worsening of the underlying condition; exacerbation = a temporary worsening of symptoms. Compensability differs by jurisdiction.</td></tr>
+            <tr><td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; font-weight:500; color:#0C2547; vertical-align:top;">Prevailing / major contributing cause</td><td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">Standards requiring the work exposure to be the primary cause (&gt;50%), not merely a contributor.</td></tr>
+            <tr><td style="padding:13px 12px 13px 0; border-bottom:1px solid #E5EEF7; font-family:'Spectral',serif; font-size:16.5px; font-weight:500; color:#0C2547; vertical-align:top;">Gatekeeping</td><td style="padding:13px 0; border-bottom:1px solid #E5EEF7; font-weight:300; vertical-align:top;">The judge's threshold decision, under Frye or Daubert, on whether expert testimony is admissible at all.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:6px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4;">References</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #0C2547; padding-top:8px;">
+        <div style="display:grid; grid-template-columns:42px 1fr; gap:22px; padding:16px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA);">01</span><p style="margin:0; font-size:15px; line-height:1.6; color:#3B4A5E; font-weight:300;">Melhorn JM, Talmage JB, Ackerman WE, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. Chicago, IL: American Medical Association; 2014. (Chapter 2, Understanding Work-Relatedness; Chapter 4, Methodology, incl. Table 4-1.)</p></div>
+        <div style="display:grid; grid-template-columns:42px 1fr; gap:22px; padding:16px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA);">02</span><p style="margin:0; font-size:15px; line-height:1.6; color:#3B4A5E; font-weight:300;">Daubert v. Merrell Dow Pharmaceuticals, Inc., 509 U.S. 579 (1993); Fed. R. Evid. 702.</p></div>
+        <div style="display:grid; grid-template-columns:42px 1fr; gap:22px; padding:16px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA);">03</span><p style="margin:0; font-size:15px; line-height:1.6; color:#3B4A5E; font-weight:300;">Frye v. United States, 293 F. 1013 (D.C. Cir. 1923).</p></div>
+        <div style="display:grid; grid-template-columns:42px 1fr; gap:22px; padding:16px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA);">04</span><p style="margin:0; font-size:15px; line-height:1.6; color:#3B4A5E; font-weight:300;">General Electric Co. v. Joiner, 522 U.S. 136 (1997); Kumho Tire Co. v. Carmichael, 526 U.S. 137 (1999).</p></div>
+        <p style="margin:18px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;"><strong style="color:#566579; font-weight:600;">Independence and disclaimer.</strong> OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association, and it provides no legal advice. Legal standards vary by jurisdiction and change over time; the controlling law of the relevant forum governs any actual matter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:70px 0 80px;">
+      <a href="Bradford Hill V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">← Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Bradford Hill</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Nine viewpoints — weighed, never tallied.</span>
+      </a>
+      <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next →</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Examples: Carpal Tunnel</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">The method applied to a real condition.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer style="background:#143C68; color:#9DB0C8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org™ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- TOP STRIP -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span></span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Shoulder Rotator Cuff V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">Examples</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">The method →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- EXAMPLE SWITCHER -->
+  <div style="background:#FFFFFF; border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:12px 48px; display:flex; align-items:center; gap:22px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.06em;">
+      <span style="text-transform:uppercase; letter-spacing:0.12em; color:#93A2B4; font-size:10.5px;">Examples</span>
+      <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:#566579; padding-bottom:3px; border-bottom:2px solid transparent;" style-hover="color:var(--accent,#1E66BA);">01 Carpal Tunnel Syndrome</a>
+      <a href="Low Back Pain V2.dc.html" style="text-decoration:none; color:#566579; padding-bottom:3px; border-bottom:2px solid transparent;" style-hover="color:var(--accent,#1E66BA);">02 Low Back Pain</a>
+      <a href="Shoulder Rotator Cuff V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); border-bottom:2px solid var(--accent,#1E66BA); padding-bottom:3px;">03 Shoulder &amp; Rotator Cuff</a>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:72px 0 0;">
+      <div><a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a></div>
+      <div style="max-width:760px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Example 03 — the balanced case</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:58px; line-height:1.06; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">Shoulder &amp; rotator cuff disease.</h1>
+        <p style="margin:24px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:22px; line-height:1.5; color:var(--accent,#1E66BA); font-weight:400;">Causation and apportionment of tendinopathy, impingement, and rotator cuff tears.</p>
+        <p style="margin:22px 0 0; font-size:19px; line-height:1.68; color:#3B4A5E; font-weight:300;">Rotator cuff syndrome is a useful teaching example because it is common, familiar, and often misunderstood. It is a multifactorial condition influenced by age, tendon biology, shoulder anatomy, individual risk factors, medical comorbidities, prior injury, and, in some cases, occupational exposure. Because shoulder symptoms are common and arm use occurs in both work and nonwork life, rotator cuff syndrome is often incorrectly assumed to be work-related simply because symptoms are reported during employment or occur in an individual who uses the arm at work.</p>
+        <p style="margin:16px 0 0; font-size:19px; line-height:1.68; color:#3B4A5E; font-weight:300;">A disciplined causation analysis must move beyond assumption and ask whether the diagnosis is correct, whether the exposure is a recognized risk factor, whether the exposure was sufficient in force, repetition, overhead posture, duration, and timing, and whether alternative explanations have been fairly considered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-01 DIAGNOSIS -->
+  <section id="diagnosis" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-01</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The diagnosis</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">A continuum, not a single injury.</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Most soft-tissue shoulder disorders fall along a single continuum of rotator cuff pathology — from early subacromial impingement (bursitis and cuff tendinopathy) to full-thickness rotator cuff tears with arthropathy. Impingement occurs when the cuff tendons, chiefly the supraspinatus, are pinched between the acromion, coracoacromial ligament, and distal clavicle above and the greater tuberosity below during shoulder elevation. Most tears occur in the supraspinatus tendon.</p>
+        <p style="margin:0; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Shoulder disorders are the third most common musculoskeletal reason patients seek care; self-reported shoulder pain runs 16&ndash;26% in the general population, and symptoms commonly recur or become chronic. Notably, shoulder cases involving workers&rsquo; compensation or litigation incur higher costs and have poorer outcomes and prognoses than comparable non-compensable cases — a reminder that claim context itself shapes outcome, and that an objective diagnosis (Step 1) must anchor the analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-02 ASSUMPTION VS EVIDENCE -->
+  <section id="assumption" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-02</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Assumption vs. evidence</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The popular assumption versus the evidence.</h2>
+        <p style="margin:0 0 24px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The intuitive view is that repetitive shoulder use &ldquo;wears out&rdquo; the cuff, so a worker with shoulder pain and a torn cuff must have a work injury. The evidence is more careful. The role of repetitive motion in impingement and cuff tears remains incompletely understood, and when impingement arises in a repetitive-motion job it is rarely the result of a single factor. Rotator cuff disease is usually multifactorial, combining external compression (often from acromial shape or age-related spurring), age-related and intrinsic tendon degeneration, and trauma.</p>
+        <div style="padding:26px 30px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">The evidence in one line</div>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">The strongest occupational factor is sustained awkward posture — working with the shoulder elevated beyond about 60° — while age carries very strong evidence and degeneration is the usual background. Most cases are a blend, and the analysis must weigh both sides rather than pick one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-03 GRADING -->
+  <section id="grading" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-03</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">How the evidence is graded</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Reading the risk-factor tables.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The tables use the strength-of-evidence labels from the base reference. A label describes how good the evidence is, not how important a factor is in a particular person.</p>
+        <div style="border-top:1px solid #0C2547;">
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#1E8A5B;"><span style="width:8px; height:8px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong / Strong</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studies consistently establish the factor as a real risk factor (relative risk &gt; 2.0 for strong tiers).</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:8px; height:8px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Limited but real support for the factor as a risk factor.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">A factor of low risk (relative risk &lt; 2.0); below the more-likely-than-not threshold on its own.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Too few or too weak studies to draw a scientific conclusion.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Conflicting</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studies of comparable quality disagree; no conclusion is possible.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#6C7D93;"><span style="width:8px; height:8px; border-radius:50%; background:#6C7D93; flex:none;"></span>No association</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studied, with no statistically significant association found.</span></div>
+        </div>
+        <p style="margin:16px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Colors are a reading aid only — green = established, blue = some, amber = weak/unresolved, grey = no association. No judgment about any individual claim is implied.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-04 OCCUPATIONAL -->
+  <section id="occupational" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-04</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Occupational risk factors</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">One factor stands out: sustained posture.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">One occupational factor stands out: sustained awkward shoulder posture. Working with the arm held in flexion or abduction beyond roughly 60&deg; carries strong evidence. Repetition and force-plus-posture combinations have some evidence; force alone and several other exposures are insufficient.</p>
+        <div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:0 0 10px; border-bottom:2px solid #0C2547; font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4;"><span>Factor</span><span>Evidence</span><span>Note</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Sustained awkward postures (&gt;60&deg; flexion/abduction)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">The standout occupational factor.</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Highly repetitive work (alone or combined)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Force combined with repetition or posture</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Forceful work</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Vibration</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Cold environment</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Keyboard activities</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.5fr 150px 1.1fr; gap:20px; padding:13px 0; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Length of employment</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+        </div>
+        <p style="margin:16px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Occupational risk factors for shoulder tendinopathy, impingement, and rotator cuff tears (Melhorn JM, Martin, D., Brooks, C.N., Seaman, S. Chapter 9 Upper Limb. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:243-356.).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-05 NON-OCCUPATIONAL -->
+  <section id="nonoccupational" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-05</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Non-occupational factors</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Age leads, with a constitutional background.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Age leads with very strong evidence, and degeneration is the usual constitutional background of cuff disease. Obesity and biopsychosocial factors carry strong evidence; diabetes some; acromial anatomy and smoking are low-risk; several others are insufficient.</p>
+        <div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:0 0 10px; border-bottom:2px solid #0C2547; font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4;"><span>Factor</span><span>Evidence</span><span>Note</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Age</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Degeneration; the dominant constitutional factor.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Obesity (high BMI)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Higher BMI increases risk.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Biopsychosocial factors</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Physical&ndash;psychological interaction in shoulder pain.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Diabetes</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Acromial anatomy (curved/hooked acromion)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Congenital/developmental shape; a driver of impingement.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Smoking</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Sex / gender</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Dominant hand; comorbidities; genetics</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+        </div>
+        <p style="margin:16px 0 24px; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Non-occupational risk factors for shoulder tendinopathy, impingement, and rotator cuff tears (Melhorn JM, Martin, D., Brooks, C.N., Seaman, S. Chapter 9 Upper Limb. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:243-356.).</p>
+        <div style="padding:26px 30px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">Why the shoulder is the balanced case</div>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">Compare the three example pages. For carpal tunnel, non-occupational factors dominate. For low back pain, even the occupational physical factors are insufficient. For the shoulder, a real occupational factor (sustained overhead posture, strong) sits alongside very strong age and strong obesity and biopsychosocial factors. The method does not favor a side — here it usually produces a genuine apportionment between work and constitution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-06 ACUTE VS DEGENERATIVE -->
+  <section id="acute" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-06</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Acute tear or degenerative disease?</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The pivotal forensic question.</h2>
+        <p style="margin:0 0 26px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The pivotal forensic question in most shoulder claims is whether the cuff pathology is an acute traumatic tear caused by a discrete event or chronic degenerative cuff disease that was present before it. The distinction drives both causation and apportionment, and it is easy to get wrong because a degenerative cuff can tear, and a scan after an event will show whatever was already there.</p>
+        <div style="border-top:1px solid #D7E2EF;">
+          <div style="padding:16px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Degeneration is the usual background.</strong> Cuff disease is typically multifactorial and degenerative; impingement is commonly driven by acromial shape (a congenital curved or hooked acromion) and by age-related spurring of the acromion and AC joint — neither of which is caused by work.</p></div>
+          <div style="padding:16px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">A tear found after an event may pre-date it.</strong> Finding a cuff tear on imaging after an incident does not establish that the incident caused it; the tear may be the constitutional, degenerative state of the shoulder.</p></div>
+          <div style="padding:16px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">An acute traumatic tear needs a matching mechanism.</strong> A genuinely acute tear should follow a sudden, high-force event capable of tearing the tendon, with a consistent clinical onset and course — not merely the temporal coincidence of pain after ordinary activity.</p></div>
+          <div style="padding:16px 0;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Prior symptoms matter.</strong> A history of pre-existing shoulder pain or treatment, corroborated against pre-claim records, points toward degenerative disease that an event may have exacerbated rather than created.</p></div>
+        </div>
+        <p style="margin:22px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:18px; line-height:1.6; color:#566579; font-weight:300;">In practice, most work-associated cuff presentations are an exacerbation of degenerative disease; a true acute traumatic tear requires the mechanism, the onset, and the clinical course to line up — exactly what Steps 3 through 5 of the method test.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-07 SIX-STEP -->
+  <section id="sixstep" style="scroll-margin-top:88px; background:#E8F1FB; color:#3B4A5E; margin-top:76px;">
+    <div style="max-width:1180px; margin:0 auto; padding:76px 48px;">
+      <div style="display:grid; grid-template-columns:180px 1fr; gap:48px;">
+        <div style="padding-top:8px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-07</div>
+          <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5A6779; margin-top:8px; line-height:1.5;">Applying the AMA six-step method &mdash; an illustration</div>
+        </div>
+        <div style="max-width:760px;">
+          <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The method, walked through.</h2>
+          <p style="margin:0 0 34px; font-size:18px; line-height:1.7; color:#3B4A5E; font-weight:300;">Consider an illustrative claim: a 58-year-old who has done years of overhead assembly work (arm sustained above 60&deg;) reports shoulder pain and impingement, with a partial-thickness supraspinatus tear on imaging. He is obese and has a hooked (type 3) acromion.</p>
+          <div style="background:#FFFFFF; border:1px solid #D7E2EF;">
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">1</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evidence of disease.</strong> Confirm the diagnosis objectively (impingement with a partial supraspinatus tear), recognizing the tear may be degenerative.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">2</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Epidemiologic data.</strong> Sustained overhead posture carries strong occupational evidence, so the claimed mechanism is a recognized risk factor — unlike the keyboard claim in the carpal tunnel example.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">3</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evidence of exposure.</strong> Document the actual overhead exposure — how often, how sustained, above what angle. Here the work genuinely involves sustained elevation beyond 60&deg;, matching the established risk.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">4</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Other relevant factors.</strong> Age (very strong), obesity (strong), and a hooked acromion (a structural driver of impingement) are all present and probable contributors. This is a multifactorial picture, not a single cause.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">5</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Validity of evidence.</strong> Distinguish acute from degenerative: is there a discrete high-force event, or a gradual onset on a degenerative background? Corroborate prior shoulder symptoms against records.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">6</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evaluation and conclusion.</strong> With both a genuine occupational factor and strong constitutional factors probable, the credible conclusion is multifactorial causation — and the work-relatedness question becomes one of apportionment, not all-or-nothing.</p></div>
+          </div>
+          <p style="margin:28px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:19px; line-height:1.55; color:#3B4A5E; font-weight:300;"><span style="font-family:'Archivo',sans-serif; font-style:normal; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA);">Contrast with the other examples.</span> In carpal tunnel the worked example pointed away from work, and in low back pain it pointed to a constitutional baseline. Here the same neutral method points to a real split — because, for the shoulder, the evidence genuinely supports contributions from both sides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RTC-08 APPORTIONMENT -->
+  <section id="apportionment" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">RTC-08</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Apportionment</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Allocating between work and constitution.</h2>
+        <p style="margin:0 0 26px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Because rotator cuff disease is usually multifactorial, it is a frequent and often genuine subject of apportionment. Where both a strong occupational factor (sustained overhead posture) and strong constitutional factors (age, obesity, acromial anatomy) are probable, responsibility is allocated among them using the apportionment companion&rsquo;s principles.</p>
+        <div style="border-top:1px solid #D7E2EF;">
+          <div style="padding:18px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Acute on degenerative.</strong> Where a discrete event tears an already-degenerative cuff, the analysis separates the acute traumatic contribution from the pre-existing degenerative disease.</p></div>
+          <div style="padding:18px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Aggravation versus exacerbation.</strong> A temporary exacerbation that resolves usually carries no permanent share; a lasting aggravation of the underlying cuff disease does.</p></div>
+          <div style="padding:18px 0;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Only probable causes, defensibly weighed.</strong> Include only causes that are more likely than not; assign percentages consistent with the literature and the facts; and where no rational basis exists, decline and defer.</p></div>
+        </div>
+        <p style="margin:18px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Brooks CN, Melhorn JM. Apportionment (Chapter 5). In: AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:139&ndash;148.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM LINE -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div></div>
+      <div style="max-width:720px; background:#143C68; padding:44px 48px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#4E96DE; margin-bottom:18px;">Bottom line</div>
+        <p style="margin:0; font-family:'Spectral',serif; font-size:21px; line-height:1.55; font-weight:300; color:#EAF1F9;">Rotator cuff disease shows the method at its most balanced. There is a real occupational signal — sustained overhead work carries strong evidence — but it sits within a usually multifactorial, largely degenerative process dominated by age and shaped by individual anatomy. The central task is to distinguish an acute traumatic tear from chronic degenerative cuff disease, and then, where both work and constitution probably contribute, to apportion honestly rather than force an all-or-nothing answer. <span style="color:#4E96DE;">As with every condition, the method decides — and for the shoulder it usually decides on both sides at once.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; padding-top:8px;">References</div>
+      <div style="max-width:820px; border-top:1px solid #D7E2EF; padding-top:24px; display:flex; flex-direction:column; gap:12px;">
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">1. Shoulder Tendinopathy, Impingement, and Rotator Cuff Tears, Chapter 9. In: Melhorn JM, Talmage JB, Ackerman WE, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. Chicago, IL: American Medical Association; 2014.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">2. Bernard BP, ed. Musculoskeletal Disorders and Workplace Factors: Neck, Upper Extremity, and Low Back. Cincinnati, OH: NIOSH; 1997 (as discussed in Chapter 9).</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">3. Brooks CN, Melhorn JM. Apportionment (Chapter 5). In: AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:139&ndash;148.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:36px 0 0;">
+      <div></div>
+      <div style="max-width:820px; border-top:1px solid #D7E2EF; padding-top:24px; display:flex; flex-direction:column; gap:10px;">
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;"><strong style="color:#566579; font-weight:600;">Independence and disclaimer.</strong> OpenCausation.org&trade; is an independent, open, noncommercial educational resource. It is not affiliated with, endorsed by, or a product of the American Medical Association.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;">The information provided is for general educational purposes only and does not constitute medical advice, legal advice, or a case-specific causation or apportionment opinion. Real-world causation and apportionment determinations require an objective diagnosis, complete records, clinical judgment, exposure analysis, relevant scientific evidence, consideration of alternative explanations, and application of the legal standards of the appropriate jurisdiction.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6; font-style:italic;">This illustration is hypothetical and provided for educational purposes only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:56px 0 80px;">
+      <a href="Low Back Pain V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">&larr; Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Low Back Pain</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Example 02 &mdash; the constitutional baseline.</span>
+      </a>
+      <a href="Glossary V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next &rarr;</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Glossary</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Key terms, defined.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer style="background:#143C68; color:#9DB0C8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org&trade; is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org&trade; was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

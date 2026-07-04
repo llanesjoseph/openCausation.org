@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+<div style="{{ themeVars }}">
+
+  <!-- ============ TOP STRIP ============ -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- ============ MASTHEAD NAV ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;">
+          <span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span>
+        </span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Examples</a>
+        <a href="Glossary V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Glossary</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">Fundamentals →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:78px 0 0;">
+      <div>
+        <a href="Fundamentals V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Fundamentals</a>
+      </div>
+      <div style="max-width:820px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">The methodology — in full</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:64px; line-height:1.05; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">A method,<br>not a verdict.</h1>
+        <p style="margin:26px 0 0; font-size:21px; line-height:1.6; color:#3B4A5E; font-weight:300;">This section describes the structured, evidence-based methodology for determining causation. It is grounded in Chapter 4, &ldquo;Methodology,&rdquo; of the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd edition, and informed by related scientific and occupational medicine sources.</p>
+        <p style="margin:18px 0 0; font-size:21px; line-height:1.6; color:#3B4A5E; font-weight:300;">The method proceeds in a disciplined sequence. It begins with the individual case, including the diagnosis, exposure, timing, objective findings, prior history, and competing explanations. It then evaluates the relevant scientific literature to determine whether the claimed exposure is capable of causing the condition and whether the individual&rsquo;s exposure was sufficient in dose, intensity, and timing.</p>
+        <p style="margin:18px 0 0; font-size:21px; line-height:1.6; color:#3B4A5E; font-weight:300;">The conclusion is not assumed at the outset. It comes last, after the facts have been identified, the evidence has been organized, the science has been assessed, and alternative explanations have been considered. A defensible causation opinion follows the method; it does not reason backward from the desired conclusion.</p>
+        <p style="margin:18px 0 0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.65; color:#8894A6;">Reference: Melhorn JM, Hegmann KT, Talmage JB, Hyman MH, Ackerman WE III. Methodology. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:115&ndash;138.</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:40px 0 0;">
+      <div></div>
+      <div style="max-width:820px; border-top:1px solid #0C2547; padding-top:18px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; margin-bottom:16px;">Index</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px 36px;">
+          <sc-for list="{{ toc }}" as="i" hint-placeholder-count="7">
+            <a href="{{ i.href }}" style="display:flex; align-items:baseline; gap:14px; text-decoration:none; padding:6px 0; border-bottom:1px solid #E5EEF7;" style-hover="border-color:var(--accent,#1E66BA);">
+              <span style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; color:var(--accent,#1E66BA); flex:none;">{{ i.num }}</span>
+              <span style="font-family:'Spectral',serif; font-size:17px; color:#3B4A5E;">{{ i.label }}</span>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §01 THREE CRITERIA ============ -->
+  <section id="three" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:84px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">MET-01</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Three historical criteria</div>
+      </div>
+      <div style="max-width:780px; border-top:1px solid #D7E2EF; padding-top:36px;">
+        <h2 style="margin:0 0 14px; font-family:'Spectral',serif; font-size:38px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">What any analysis must still show.</h2>
+        <p style="margin:0 0 30px; font-size:19px; line-height:1.7; color:#3B4A5E; font-weight:300;">Historically, a condition was considered occupational when three criteria were met. They remain a plain-language summary of what the modern method operationalizes.</p>
+        <sc-for list="{{ threeCriteria }}" as="c" hint-placeholder-count="3">
+          <div style="display:grid; grid-template-columns:42px 1fr; gap:22px; padding:22px 0; border-top:1px solid #D7E2EF; align-items:start;">
+            <span style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); padding-top:5px;">{{ c.num }}</span>
+            <div>
+              <h3 style="margin:0 0 8px; font-family:'Spectral',serif; font-size:22px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">{{ c.title }}</h3>
+              <p style="margin:0; font-size:16.5px; line-height:1.6; color:#566579; font-weight:300;">{{ c.desc }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §02 SIX-STEP (light blue) ============ -->
+  <section id="sixstep" style="scroll-margin-top:0; background:#E8F1FB; color:#3B4A5E; margin-top:84px;">
+    <div style="max-width:1180px; margin:0 auto; padding:90px 48px;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px; margin-bottom:14px;">
+        <div>
+          <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent,#1E66BA);">MET-02 &middot; AMA six-step method</div>
+          <h2 style="margin:16px 0 0; font-family:'Spectral',serif; font-size:44px; line-height:1.06; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">A sequential framework.</h2>
+        </div>
+        <p style="margin:0 0 6px; max-width:340px; font-size:15.5px; line-height:1.6; color:#5A6779; font-weight:300;">Developed by NIOSH, modified by ACOEM, and integrated into the AMA Guides causation Blue Book, this stepwise method provides a disciplined framework for determining work-relatedness. Each step must be satisfied by credible evidence before a causation opinion can be supported. If a required step cannot be satisfied in a way that credibly supports relatedness, the claim of work-related causation cannot stand.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#C6D9EF; border:1px solid #C6D9EF; margin-top:44px;">
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="6">
+          <div style="background:#FFFFFF; padding:30px 28px 32px; min-height:230px; display:flex; flex-direction:column;">
+            <div style="margin-bottom:18px;">
+              <span style="font-family:'Spectral',serif; font-size:22px; font-weight:500; color:var(--accent,#1E66BA); line-height:1;">{{ s.tag }}</span>
+            </div>
+            <h3 style="margin:0 0 10px; font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">{{ s.title }}</h3>
+            <p style="margin:0; font-size:14.5px; line-height:1.55; color:#5A6779; font-weight:300;">{{ s.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:28px; display:flex; align-items:baseline; gap:16px; font-family:'Spectral',serif; font-style:italic; font-size:18px; color:#5A6779; font-weight:300;">
+        <span style="font-family:'Archivo',sans-serif; font-style:normal; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); flex:none;">The rule</span>
+        The method moves in one direction: from the individual case, to the scientific literature, and then to a defensible conclusion. The conclusion follows the evidence &mdash; never the other way around.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MET-03 EVIDENCE GRADING ============ -->
+  <section id="evidence" style="scroll-margin-top:88px; background:#E8F1FB; color:#3B4A5E;">
+    <div style="max-width:1180px; margin:0 auto; padding:90px 48px;">
+    <div style="max-width:780px; margin-bottom:44px;">
+      <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent,#1E66BA);">MET-03</div>
+      <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#5A6779; margin-top:8px; margin-bottom:14px;">Building &amp; grading the evidence</div>
+      <h2 style="margin:0 0 16px; font-family:'Spectral',serif; font-size:40px; line-height:1.08; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">What “strong evidence” actually means.</h2>
+      <p style="margin:0; font-size:19px; line-height:1.65; color:#3B4A5E; font-weight:300;">Step 2 asks what the literature shows. Answering it credibly means knowing how that literature is weighed — a standardized, five-step rating that turns a pile of studies into one defensible label.</p>
+    </div>
+    <!-- five-step process -->
+    <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:#C6D9EF; border:1px solid #C6D9EF; margin-bottom:50px;">
+      <sc-for list="{{ ratingSteps }}" as="r" hint-placeholder-count="5">
+        <div style="background:#FFFFFF; padding:22px 20px 24px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; color:var(--accent,#1E66BA); margin-bottom:12px;">{{ r.num }}</div>
+          <div style="font-family:'Spectral',serif; font-size:18px; font-weight:500; color:#0C2547; line-height:1.25; margin-bottom:8px;">{{ r.title }}</div>
+          <p style="margin:0; font-size:13.5px; line-height:1.5; color:#6C7D93; font-weight:300;">{{ r.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <!-- outcomes + scoring, two columns -->
+    <div style="display:grid; grid-template-columns:1.15fr 1fr; gap:48px; align-items:start;">
+      <div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5A6779; margin-bottom:18px;">The honest outcomes</div>
+        <sc-for list="{{ outcomes }}" as="o" hint-placeholder-count="5">
+          <div style="display:flex; gap:18px; padding:15px 0; border-top:1px solid #C6D9EF; align-items:baseline;">
+            <span style="width:11px; height:11px; border-radius:50%; background:{{ o.color }}; flex:none; transform:translateY(2px);"></span>
+            <span style="font-family:'Spectral',serif; font-size:18px; font-weight:500; color:#0C2547; width:128px; flex:none;">{{ o.label }}</span>
+            <span style="font-size:15px; line-height:1.5; color:#3B4A5E; flex:1; font-weight:300;">{{ o.meaning }}</span>
+          </div>
+        </sc-for>
+        <p style="margin:22px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:16.5px; line-height:1.55; color:#5A6779; font-weight:300;">“Insufficient,” and “conflicted” are legitimate conclusions. Naming uncertainty honestly is itself a mark of methodological integrity.</p>
+      </div>
+      <!-- scoring figure -->
+      <div style="background:#FFFFFF; padding:30px 32px 32px; color:#3B4A5E;">
+        <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:8px;">How a study earns its weight</div>
+        <p style="margin:0 0 22px; font-size:14.5px; line-height:1.55; color:#5A6779; font-weight:300;">Each study is scored 0–140 on quality, then multiplied by a weight for its design. Quality × weight = impact; impacts are summed and classified.</p>
+        <sc-for list="{{ weights }}" as="w" hint-placeholder-count="5">
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:10px 0; border-top:1px solid #E5EEF7;">
+            <span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">{{ w.design }}</span>
+            <span style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; color:var(--accent,#1E66BA);">×{{ w.weight }}</span>
+          </div>
+        </sc-for>
+        <div style="margin-top:20px; padding-top:18px; border-top:1px solid #E5EEF7; font-size:13px; line-height:1.55; color:#8695A9; font-weight:300;">Adjustment for confounders is the only double-weighted criterion (0–20) — the single strongest safeguard against a spurious association.</div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ §04 RR 2.0 + WIDGET ============ -->
+  <section id="rr" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:90px 48px 0;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; align-items:start;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">MET-04</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Relative risk</div>
+      </div>
+      <div style="max-width:780px; border-top:1px solid #D7E2EF; padding-top:36px;">
+        <h2 style="margin:0 0 16px; font-family:'Spectral',serif; font-size:38px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The most consequential number.</h2>
+        <p style="margin:0 0 8px; font-size:19px; line-height:1.7; color:#3B4A5E; font-weight:300;">Relative risk compares the rate of disease in an exposed group with the rate in an appropriate unexposed or reference group. An RR of 1.0 means no excess risk is associated with the exposure. As RR increases above 1.0, the portion of disease among exposed individuals that may be attributed to the exposure also increases, assuming the association is valid and causal. This bridge is expressed as the attributable fraction among the exposed: <em style="font-style:italic; color:#0C2547;">(RR − 1) / RR.</em> At <strong style="font-weight:500;">RR 2.0</strong>, the attributable fraction is 50%; above RR 2.0, more than half of the disease among exposed individuals is attributable to the exposure, which may satisfy a more-likely-than-not standard when the underlying evidence is otherwise credible.</p>
+
+        <!-- RR widget -->
+        <div style="margin-top:32px; background:#E8F1FB; padding:32px 36px 34px; color:#3B4A5E;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:6px;">
+            <span style="font-family:'Spectral',serif; font-size:23px; color:#0C2547;">From relative risk to “more likely than not”</span>
+            <sc-if value="{{ showExhibitTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'Archivo',sans-serif; font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8695A9;">Exhibit · live</span></sc-if>
+          </div>
+          <p style="margin:0 0 26px; font-size:15px; line-height:1.55; color:#5A6779; font-weight:300;">Drag to watch the excess fraction cross 50% exactly at RR 2.0.</p>
+          <div style="display:flex; gap:44px; align-items:center;">
+            <div style="flex:1;">
+              <div style="display:flex; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:12px; color:#5A6779; margin-bottom:12px;">
+                <span style="letter-spacing:0.04em; text-transform:uppercase; font-weight:500;">Relative risk</span>
+                <span style="font-family:'Spectral',serif; font-size:19px; color:var(--accent,#1E66BA);">RR {{ rrDisplay }}</span>
+              </div>
+              <div style="position:relative; padding:6px 0;">
+                <input type="range" min="1" max="5" step="0.1" value="{{ rr }}" onInput="{{ setRr }}" style="width:100%; accent-color:#1E66BA; cursor:pointer;" />
+                <div style="position:absolute; top:-2px; left:25%; width:1px; height:10px; background:#8695A9;"></div>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:10px; color:#8695A9; margin-top:6px; letter-spacing:0.04em;"><span>1.0</span><span style="color:var(--accent,#1E66BA);">2.0 · threshold</span><span>5.0</span></div>
+            </div>
+            <div style="flex:none; width:188px; text-align:center; border-left:1px solid #C6D9EF; padding-left:40px;">
+              <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5A6779; margin-bottom:8px;">Excess fraction</div>
+              <div style="font-family:'Spectral',serif; font-size:54px; line-height:1; color:{{ efColor }};">{{ efDisplay }}</div>
+              <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:{{ efColor }}; margin-top:10px; letter-spacing:0.02em;">{{ verdict }}</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:30px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-bottom:8px;">Three important considerations, held together with intellectual honesty</div>
+          <sc-for list="{{ nuances }}" as="n" hint-placeholder-count="3">
+            <div style="display:grid; grid-template-columns:24px 1fr; gap:16px; padding:16px 0; border-top:1px solid #D7E2EF; align-items:start;">
+              <span style="font-family:'Spectral',serif; font-size:16px; color:var(--accent,#1E66BA); padding-top:2px;">{{ n.num }}</span>
+              <div>
+                <span style="font-family:'Spectral',serif; font-size:18px; font-weight:500; color:#0C2547;">{{ n.title }} </span>
+                <span style="font-size:16px; line-height:1.6; color:#566579; font-weight:300;">{{ n.desc }}</span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §05 WORKED EXAMPLES ============ -->
+  <section id="examples" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:90px 48px;">
+    <div style="max-width:780px; margin-bottom:40px;">
+      <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:14px;">MET-05</div>
+      <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#93A2B4; margin-top:-10px; margin-bottom:14px;">Two examples</div>
+      <h2 style="margin:0 0 16px; font-family:'Spectral',serif; font-size:40px; line-height:1.08; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Same disease. Different causation conclusions. Different legal consequences.</h2>
+      <p style="margin:0; font-size:19px; line-height:1.65; color:#3B4A5E; font-weight:300;">A population-level risk factor can still fail individual legal causation. Assume a baseline of 100 cases per 10,000 adults — then change only the exposure.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <sc-for list="{{ examples }}" as="e" hint-placeholder-count="2">
+        <div style="border:1px solid #D7E2EF; background:#FFFFFF;">
+          <div style="padding:26px 30px 22px; border-bottom:1px solid #D7E2EF; background:{{ e.headBg }};">
+            <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:{{ e.kickerColor }};">{{ e.kicker }}</span>
+            <h3 style="margin:8px 0 0; font-family:'Spectral',serif; font-size:27px; font-weight:500; color:{{ e.titleColor }}; letter-spacing:-0.01em;">{{ e.name }}</h3>
+          </div>
+          <div style="padding:24px 30px 28px;">
+            <div style="display:flex; gap:30px; margin-bottom:20px;">
+              <div><div style="font-family:'Archivo',sans-serif; font-size:10px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4; margin-bottom:5px;">Relative risk</div><div style="font-family:'Spectral',serif; font-size:30px; color:#0C2547;">{{ e.rr }}</div></div>
+              <div><div style="font-family:'Archivo',sans-serif; font-size:10px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4; margin-bottom:5px;">Excess fraction</div><div style="font-family:'Spectral',serif; font-size:30px; color:{{ e.efColor }};">{{ e.ef }}</div></div>
+            </div>
+            <p style="margin:0 0 16px; font-size:15.5px; line-height:1.6; color:#3B4A5E; font-weight:300;">{{ e.detail }}</p>
+            <div style="padding-top:14px; border-top:1px solid #E5EEF7; font-family:'Spectral',serif; font-style:italic; font-size:16px; color:{{ e.efColor }};">{{ e.verdict }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ §06 INDIVIDUAL CASE ============ -->
+  <section id="individual" style="scroll-margin-top:88px; background:#E4EEFA; border-top:1px solid #D7E2EF; border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:80px 48px; display:grid; grid-template-columns:180px 1fr; gap:48px; align-items:start;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">MET-06</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">To the individual case</div>
+      </div>
+      <div style="max-width:780px;">
+        <p style="margin:0; font-family:'Spectral',serif; font-size:28px; line-height:1.42; font-weight:300; letter-spacing:-0.01em; color:#0C2547;">Epidemiology describes groups; a claim concerns one person. Population association establishes only whether an exposure is <em style="font-style:italic; color:var(--accent,#1E66BA);">capable</em> of causing a condition — and at what strength.</p>
+        <p style="margin:22px 0 0; font-size:18px; line-height:1.7; color:#3B4A5E; font-weight:300;">Most conditions are multifactorial. Where several causes contribute, apportionment estimates the relative weight of each — occupational and non-occupational. Even where an exposure is an established risk factor, the science may show its contribution to be small, warranting only a correspondingly small apportionment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §07 INTEGRITY ============ -->
+  <section id="integrity" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:90px 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; align-items:start;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">MET-07</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Integrity</div>
+      </div>
+      <div style="max-width:780px;">
+        <p style="margin:0; font-family:'Spectral',serif; font-size:28px; line-height:1.42; font-weight:300; letter-spacing:-0.01em; color:#0C2547;">Integrity means applying the method consistently and reporting the results without regard to the requesting party. <em style="font-style:italic; color:var(--accent,#1E66BA);">The science is the science</em> regardless of who asks for the analysis; the conclusion must follow the evidence, not the interests of the person or party requesting the review.</p>
+        <div style="margin-top:30px; padding:24px 28px; border-left:2px solid var(--accent,#1E66BA); background:#EFF4FA;">
+          <span style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA);">A note on balance</span>
+          <p style="margin:10px 0 0; font-size:17px; line-height:1.6; color:#3B4A5E; font-weight:300;">This method advocates for no party and favors no predetermined outcome. Its commitment is to method alone: a structured, evidence-based process applied the same way regardless of who performs the analysis, who requested it, or which party the conclusion may favor. The science is the science. The conclusion must follow the evidence, not the interests of the requesting party.</p>
+        </div>
+        <!-- cross links -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:34px;">
+          <a href="Bradford Hill V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:22px 24px; display:block;" style-hover="border-color:var(--accent,#1E66BA);">
+            <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-bottom:7px;">Related</div>
+            <div style="font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Bradford Hill →</div>
+          </a>
+          <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:22px 24px; display:block;" style-hover="border-color:var(--accent,#1E66BA);">
+            <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-bottom:7px;">Applied</div>
+            <div style="font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547;">Examples →</div>
+          </a>
+        </div>
+        <p style="margin:30px 0 0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.7; color:#8894A6; font-weight:400;">Adapted from <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: Principles and Best Practices for Determining Injury and Disease Relatedness</em> and <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: An Introduction to Biostatistics</em> — foundational educational source documents for OpenCausation.org™ — by J. Mark Melhorn, MD.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGER ============ -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:20px 0 86px;">
+      <a href="Fundamentals V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">← Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Fundamentals</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">The conceptual foundation.</span>
+      </a>
+      <a href="Bradford Hill V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next →</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Bradford Hill</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Nine considerations — weighed, not tallied.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#143C68; color:#9DB0C8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org™ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Causation Blue&quot;,&quot;Deep Navy&quot;,&quot;Bright&quot;],&quot;default&quot;:&quot;Causation Blue&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showExhibitTags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { rr: 2.0 };
+
+  renderVals() {
+    const accentThemes = {
+      'Causation Blue': ['#1E66BA', '#063672', '#DEEAF6'],
+      'Deep Navy':      ['#063672', '#062A5A', '#DEEAF6'],
+      'Bright':         ['#367EDE', '#1E66BA', '#DEEAF6'],
+    };
+    const themeName = this.props.accentTheme || 'Causation Blue';
+    const [a, d, t] = accentThemes[themeName] || accentThemes['Causation Blue'];
+    const themeVars = `--accent:${a}; --accent-deep:${d}; --accent-tint:${t};`;
+    const showExhibitTags = this.props.showExhibitTags ?? true;
+
+    const toc = [
+      ['01', 'Three historical criteria', '#three'],
+      ['02', 'The six-step framework', '#sixstep'],
+      ['03', 'Grading the evidence', '#evidence'],
+      ['04', 'Relative risk', '#rr'],
+      ['05', 'Two examples', '#examples'],
+      ['06', 'To the individual case', '#individual'],
+      ['07', 'Integrity', '#integrity'],
+    ].map(i => ({ num: i[0], label: i[1], href: i[2] }));
+
+    const threeCriteria = [
+      ['HIS-01', 'Compatibility', 'The medical findings must be compatible with the known effects of the claimed exposure, agent, mechanism, or event.'],
+      ['HIS-02', 'Sufficient Exposure', 'The exposure must be sufficient in dose, intensity, frequency, duration, and timing to plausibly cause or materially contribute to the condition.'],
+      ['HIS-03', 'Weight of Evidence', 'Taken as a whole, the evidence must support an occupational explanation over more likely non-occupational causes or competing explanations.'],
+    ].map(c => ({ num: c[0], title: c[1], desc: c[2] }));
+
+    const steps = [
+      ['01', 'Evidence of disease', 'What is the disease, and is the diagnosis correct? An analysis built on the wrong diagnosis is worthless.'],
+      ['02', 'Epidemiological data', 'Does quality data support a relationship with the exposure, and how far is the condition idiopathic? This connects the case to the literature.'],
+      ['03', 'Evidence of exposure', 'Does predominantly objective evidence show the level — frequency, intensity, duration — could cause the disease? A risk factor needs a sufficient dose.'],
+      ['04', 'Other relevant factors', 'What individual risk factors beyond the exposure could contribute — pregnancy, obesity, diabetes? Honest analysis weighs every plausible cause.'],
+      ['05', 'Validity of evidence', 'Is there confounding or conflicting data suggesting the information is inaccurate? Are other opinions in the case unreliable?'],
+      ['06', 'Evaluation & conclusions', 'Taken together, do the data support a work-related disease? The conclusion comes after the evidence — never before it.'],
+    ].map(s => ({ num: s[0], tag: 'STEP-' + s[0] + '/06', title: s[1], desc: s[2] }));
+
+    const ratingSteps = [
+      ['01', 'Systematic search', 'Search of peer-reviewed studies, gathered across the major databases.'],
+      ['02', 'Classify design', 'A panel identifies each study’s design classification.'],
+      ['03', 'Score quality', 'Three raters score each study 0–140; wide disagreement is re-rated.'],
+      ['04', 'Weight by design', 'Each score is multiplied by a weight for design strength.'],
+      ['05', 'Sum & classify', 'Impacts are summed into one strength-of-evidence label.'],
+    ].map(r => ({ num: r[0], title: r[1], desc: r[2] }));
+
+    const outcomes = [
+      ['Very strong / Strong', 'Studied — all or almost all studies agree it is a true risk factor.', '#063672'],
+      ['Some evidence', 'Two or more adequate studies agree; relative risk above 2.0.', '#1E66BA'],
+      ['Low risk', 'Agreed low risk, RR below 2.0 — below threshold, but may earn a small apportionment.', '#4E96DE'],
+      ['Insufficient', 'Score below 100 points — no scientifically valid conclusion is possible.', '#93A2B4'],
+      ['Conflicted', 'Extensively studied, but the literature clearly conflicts — no conclusion possible.', '#7C8798'],
+    ].map(o => ({ label: o[0], meaning: o[1], color: o[2] }));
+
+    const weights = [
+      ['Prospective cohort', '1.00'],
+      ['Retrospective cohort', '0.60'],
+      ['Case-control', '0.30'],
+      ['Cross-sectional', '0.15'],
+      ['Ecologic', '0.05'],
+    ].map(w => ({ design: w[0], weight: w[1] }));
+
+    const nuances = [
+      ['1', 'A legal line, not a scientific one.', 'The RR \u2265 2.0 threshold came from common law, not epidemiology — applied across radiation, vaccine, pharmaceutical, asbestos, and toxic-tort cases.'],
+      ['2', 'Epidemiologists read it cautiously.', 'Many regard an RR below 3 as weak, especially from case-control studies. 2.0 is a legal bright line, not a scientific certainty.'],
+      ['3', 'Below 2.0 can still matter.', 'In any-contribution jurisdictions, a factor with RR under 2.0 may still receive a small apportionment — minimal causation, much less than 50%.'],
+    ].map(n => ({ num: n[0], title: n[1], desc: n[2] }));
+
+    const examples = [
+      { kicker: 'Below the threshold', name: 'The widget factory', rr: '1.10', ef: '\u22489%', headBg: '#E8F1FB', kickerColor: '#5A6779', titleColor: '#0C2547', efColor: '#8894A6',
+        detail: 'Of 110 cases among exposed workers, 100 are the baseline that would occur anyway; only 10 reflect the exposure. A genuine population-level risk factor — yet for any one worker, only ~9% attributable.',
+        verdict: 'Real risk factor — but below individual probability.' },
+      { kicker: 'Across the threshold', name: 'The chain-saw logger', rr: '2.50', ef: '60%', headBg: '#223349', kickerColor: '#9CC0EA', titleColor: '#EAF1F9', efColor: '#1E66BA',
+        detail: 'Of 250 cases, 100 are baseline and 150 reflect the exposure. For any single worker, the chance the disease reflects the occupational increase is 150/250 — consistent with reasonable medical probability.',
+        verdict: 'Crosses the legal threshold.' },
+    ];
+
+    const rr = this.state.rr;
+    const ef = (rr - 1) / rr;
+    const efPct = Math.round(ef * 100);
+    const meets = rr >= 2.0;
+
+    return {
+      themeVars, showExhibitTags, toc, threeCriteria, steps, ratingSteps, outcomes, weights, nuances, examples,
+      rr,
+      setRr: (e) => this.setState({ rr: parseFloat(e.target.value) }),
+      rrDisplay: rr.toFixed(1),
+      efDisplay: efPct + '%',
+      efColor: meets ? '#1E66BA' : '#8695A9',
+      verdict: meets ? 'More likely than not' : 'Not more likely than not',
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- TOP STRIP -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span></span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">Examples</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">The method →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- EXAMPLE SWITCHER -->
+  <div style="background:#FFFFFF; border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:12px 48px; display:flex; align-items:center; gap:22px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.06em;">
+      <span style="text-transform:uppercase; letter-spacing:0.12em; color:#93A2B4; font-size:10.5px;">Examples</span>
+      <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); border-bottom:2px solid var(--accent,#1E66BA); padding-bottom:3px;">01 Carpal Tunnel Syndrome</a>
+      <a href="Low Back Pain V2.dc.html" style="text-decoration:none; color:#566579; padding-bottom:3px; border-bottom:2px solid transparent;" style-hover="color:var(--accent,#1E66BA);">02 Low Back Pain</a>
+      <a href="Shoulder Rotator Cuff V2.dc.html" style="text-decoration:none; color:#566579; padding-bottom:3px; border-bottom:2px solid transparent;" style-hover="color:var(--accent,#1E66BA);">03 Shoulder &amp; Rotator Cuff</a>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:72px 0 0;">
+      <div><a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a></div>
+      <div style="max-width:760px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Example 01 — the method applied</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:58px; line-height:1.06; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">Carpal tunnel syndrome.</h1>
+        <p style="margin:24px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:22px; line-height:1.5; color:var(--accent,#1E66BA); font-weight:400;">Causation and apportionment of median nerve entrapment at the wrist.</p>
+        <p style="margin:22px 0 0; font-size:19px; line-height:1.68; color:#3B4A5E; font-weight:300;">Carpal tunnel syndrome is a useful teaching example because it is common, familiar, and often misunderstood. It is a multifactorial condition influenced by anatomy, individual risk factors, medical comorbidities, and, in some cases, occupational exposure. Because symptoms are common and hand use is frequent in both work and nonwork life, carpal tunnel syndrome is often incorrectly assumed to be work-related simply because it is often reported during employment or occurs in an individual who uses the hands at work. A disciplined causation analysis must move beyond assumption and ask whether the diagnosis is correct, whether the exposure is a recognized risk factor, whether the exposure was sufficient in force, repetition, posture, duration, and timing, and whether alternative explanations have been fairly considered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-01 DIAGNOSIS -->
+  <section id="diagnosis" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-01</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The diagnosis</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Establish the disease objectively.</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Carpal tunnel syndrome is a compression neuropathy of the median nerve as it passes through the carpal tunnel at the wrist. Typical symptoms include numbness, tingling, and pain in the median nerve distribution of the hand, often worse at night. It is common in the general population, and its prevalence rises with age.</p>
+        <p style="margin:0 0 14px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Because the diagnosis drives everything that follows, it must be established objectively — Step 1 of the causation method. CTS supported only by self-reported symptoms is a weak foundation; many workplace studies of CTS causation rely on &ldquo;soft&rdquo; symptom-based criteria, which introduces reporting bias and inflates apparent work-relatedness. A credible causation analysis rests on an objectively confirmed diagnosis (for example, electrodiagnostic evidence of median nerve dysfunction) consistent with the clinical picture — not on the complaint or symptoms alone.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Median Nerve Entrapment at the Wrist (Carpal Tunnel Syndrome), Chapter 9. In: Melhorn JM, Talmage JB, Ackerman WE, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. Chicago, IL: American Medical Association; 2014.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-02 ASSUMPTION VS EVIDENCE -->
+  <section id="assumption" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-02</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Assumption vs. evidence</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The popular assumption versus the evidence.</h2>
+        <p style="margin:0 0 24px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">It is widely believed — by the public and by many clinicians — that CTS is caused by occupational hand use, and especially by typing and computer work. Two decades of research tell a different story. Many factors cause or contribute to CTS, including genetics, age, sex, obesity, diabetes, and thyroid disease. Computer keyboard use, in particular, has not been shown to increase the risk: the prevalence of CTS among computer users is similar to that in the general population.</p>
+        <div style="padding:26px 30px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">The evidence in one line</div>
+          <p style="margin:0 0 12px; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">When 117 studies on CTS causation were scored on a quantitative Bradford Hill scale, the average evidence for biological risk factors (genetics, age) was roughly double that for occupational factors, and the strength of association was about three times greater. The quality of evidence was judged moderate for genetic/inherent factors and poor for occupational factors. For most individuals, CTS is more a matter of biology than of the job.</p>
+          <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.6; color:#8894A6;">Lozano-Calderón S, Anthony S, Ring D. The quality and strength of evidence for etiology: example of carpal tunnel syndrome. J Hand Surg Am. 2008;33(4):525–538.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-03 GRADING -->
+  <section id="grading" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-03</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">How the evidence is graded</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Reading the risk-factor tables.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The risk-factor tables that follow use the strength-of-evidence labels defined in the base reference, derived from the literature-rating method. Reading them correctly is essential: a label describes how good the evidence is, not how important the factor is to a particular person.</p>
+        <div style="border-top:1px solid #0C2547;">
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#1E8A5B;"><span style="width:8px; height:8px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong / Strong</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studies consistently establish the factor as a real risk factor (relative risk &gt; 2.0 for strong tiers).</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:8px; height:8px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Limited but real support for the factor as a risk factor.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">A factor of low risk (relative risk &lt; 2.0); below the more-likely-than-not threshold on its own.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Too few or too weak studies to draw a scientific conclusion.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Conflicting</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studies of comparable quality disagree; no conclusion is possible.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#6C7D93;"><span style="width:8px; height:8px; border-radius:50%; background:#6C7D93; flex:none;"></span>No association</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studied, with no statistically significant association found.</span></div>
+        </div>
+        <p style="margin:16px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Colors are a reading aid only — green = established, blue = some, amber = weak/unresolved, grey = no association. No judgment about any individual claim is implied. (Melhorn JM, Hegmann KT, Talmage JB, Hyman MH, Ackerman WE III. Chapter 4 Methodology. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:115-138.)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-04 OCCUPATIONAL -->
+  <section id="occupational" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-04</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Occupational risk factors</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Where the occupational evidence is strong &mdash; and where it isn&rsquo;t.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The occupational evidence is strongest for high physical demand &mdash; force, and force combined with high repetition or posture &mdash; not for keyboard work. The highest CTS rates appear in occupations such as meatpacking, poultry processing, and automobile assembly that require intensive manual exertion of the hands and wrists.</p>
+        <div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:0 0 10px; border-bottom:2px solid #0C2547; font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4;"><span>Factor</span><span>Evidence</span><span>Note</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Forceful work</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Independent risk factor.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Force combined with repetition or posture</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Highest rates in high-demand manual jobs.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Highly repetitive work (with other factors)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Definitions of &ldquo;repetitive&rdquo; vary widely.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Job dissatisfaction</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">A psychosocial contributor.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Highly repetitive work alone</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Conflicting</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Inconsistent definitions cloud the link.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Vibration</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Below the probability threshold alone.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Awkward postures</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Some lab evidence at extreme postures.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Keyboard / computer use</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Prevalence similar to the general population.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Cold environment</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Length of employment</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+        </div>
+        <p style="margin:16px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Occupational risk factors for median nerve entrapment at the wrist, with strength-of-evidence ratings (Melhorn JM, Martin, D., Brooks, C.N., Seaman, S. Chapter 9 Upper Limb. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:243-356.).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-05 NON-OCCUPATIONAL -->
+  <section id="nonoccupational" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-05</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Non-occupational risk factors</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The stronger, broader picture.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The non-occupational evidence is, on balance, stronger and broader than the occupational evidence &mdash; a central fact in most CTS causation analyses. Several individual factors carry very strong evidence.</p>
+        <div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:0 0 10px; border-bottom:2px solid #0C2547; font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4;"><span>Factor</span><span>Evidence</span><span>Note</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Age</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Risk increases with age.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Obesity (high BMI)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Higher BMI increases risk.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Female sex</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Diabetes mellitus</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Risk increases with condition.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Genetics</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Family history predisposes.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Comorbidity</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Other upper-limb MSDs, rheumatoid/thyroid disease, prior wrist fracture.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Biopsychosocial factors</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Symptom expression varies by individual.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Wrist size / ratio</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Anatomic predisposition.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Certain hobbies (gardening, knitting)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Non-occupational hand use.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Smoking</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Alcohol; dominant hand</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+        </div>
+        <p style="margin:16px 0 24px; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Non-occupational risk factors for CTS, with strength-of-evidence ratings (Melhorn JM, Martin, D., Brooks, C.N., Seaman, S. Chapter 9 Upper Limb. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:243-356.).</p>
+        <div style="padding:26px 30px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">Why this matters for an individual case</div>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">A person with diabetes who does little forceful hand work will most likely develop CTS because of the diabetes &mdash; not the job. Step 4 of the method (other relevant factors) exists precisely to weigh these very-strong non-occupational factors before attributing the condition to work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-06 SIX-STEP -->
+  <section id="sixstep" style="scroll-margin-top:88px; background:#E8F1FB; color:#3B4A5E; margin-top:76px;">
+    <div style="max-width:1180px; margin:0 auto; padding:76px 48px;">
+      <div style="display:grid; grid-template-columns:180px 1fr; gap:48px;">
+        <div style="padding-top:8px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-06</div>
+          <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5A6779; margin-top:8px; line-height:1.5;">Applying the AMA six-step method &mdash; an illustration</div>
+        </div>
+        <div style="max-width:760px;">
+          <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The method, walked through.</h2>
+          <p style="margin:0 0 34px; font-size:18px; line-height:1.7; color:#3B4A5E; font-weight:300;">Consider an illustrative claim: a 52-year-old data-entry worker attributes CTS to years of keyboard use. She is obese, has type 2 diabetes, and a mother with CTS. Walking the six steps shows how the evidence &mdash; not the assumption &mdash; produces the conclusion.</p>
+          <div style="background:#FFFFFF; border:1px solid #D7E2EF;">
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">1</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evidence of disease.</strong> Confirm CTS objectively (e.g., electrodiagnostic study consistent with the clinical picture), not by symptoms alone.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">2</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Epidemiologic data.</strong> The claimed cause is keyboard use, for which the evidence is insufficient; the prevalence in computer users matches the general population. The claimed mechanism is not an established risk factor.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">3</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evidence of exposure.</strong> Even setting aside Step 2, the work is low-force keyboard activity &mdash; not the forceful, high-demand exertion (meatpacking, assembly) that carries very strong evidence. The exposure does not match the risk that the literature supports.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">4</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Other relevant factors.</strong> Three very-strong non-occupational risk factors are present &mdash; age, obesity, and diabetes &mdash; plus a genetic predisposition (family history). These provide a far better explanation than the job.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">5</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Validity of evidence.</strong> Check for confounding and for reliance on soft, symptom-based criteria; corroborate the history against pre-claim records.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">6</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evaluation and conclusion.</strong> The claimed occupational cause fails at Steps 2 and 3, while strong non-occupational causes are present. On this evidence, the CTS is more likely than not non-occupational. The conclusion follows the method, regardless of the initial assumption.</p></div>
+          </div>
+          <p style="margin:28px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:19px; line-height:1.55; color:#3B4A5E; font-weight:300;"><span style="font-family:'Archivo',sans-serif; font-style:normal; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA);">Change the facts, change the answer.</span> Had this worker been a meatpacker performing forceful, repetitive hand exertion with no significant non-occupational risk factors, Steps 2&ndash;4 would point the other way. The method is neutral; it follows the evidence wherever it leads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTS-07 APPORTIONMENT -->
+  <section id="apportionment" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">CTS-07</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Apportionment</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Allocating responsibility when more than one cause is real.</h2>
+        <p style="margin:0 0 26px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Because CTS is so often multifactorial, it is a frequent subject of apportionment. Where the analysis supports more than one probable cause, the relative contributions are allocated using the principles in the apportionment companion &mdash; only probable causes are included, percentages must be logical and defensible, and where no rational basis exists the evaluator should decline rather than speculate.</p>
+        <div style="border-top:1px solid #D7E2EF;">
+          <div style="padding:18px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Among employers.</strong> For a genuinely work-related case with comparable exposure across jobs, responsibility may apportion by duration or dose of exposure.</p></div>
+          <div style="padding:18px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Between work and the individual.</strong> Where both forceful occupational exposure and very-strong non-occupational factors (diabetes, obesity, genetics, age) are present, the allocation reflects each probable cause&rsquo;s contribution.</p></div>
+          <div style="padding:18px 0;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Jurisdiction governs.</strong> Whether a pre-existing predisposition is apportionable depends on the venue&rsquo;s rules for symptomatic and disabling pre-existing conditions.</p></div>
+        </div>
+        <p style="margin:18px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Brooks CN, Melhorn JM. Apportionment (Chapter 5). In: AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:139&ndash;148.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM LINE -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div></div>
+      <div style="max-width:720px; background:#143C68; padding:44px 48px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#4E96DE; margin-bottom:18px;">Bottom line</div>
+        <p style="margin:0 0 16px; font-family:'Spectral',serif; font-size:21px; line-height:1.55; font-weight:300; color:#EAF1F9;">Carpal tunnel syndrome illustrates why causation analysis must begin with evidence, not assumption. Although it is commonly assumed to be a typing-related condition, the strongest occupational evidence is linked to forceful, high-demand manual work, while several non-occupational factors &mdash; including age, sex, obesity, diabetes, and genetics &mdash; may be strongly relevant.</p>
+        <p style="margin:0; font-family:'Spectral',serif; font-size:21px; line-height:1.55; font-weight:300; color:#EAF1F9;">That is why the individual case matters. A credible conclusion requires an objective diagnosis, a close match between the actual exposure and the scientific literature, and a fair assessment of competing non-occupational factors. <span style="color:#4E96DE;">The method determines the conclusion; the assumption does not.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; padding-top:8px;">References</div>
+      <div style="max-width:820px; border-top:1px solid #D7E2EF; padding-top:24px; display:flex; flex-direction:column; gap:12px;">
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">1. Median Nerve Entrapment at the Wrist (Carpal Tunnel Syndrome), Chapter 9. In: Melhorn JM, Talmage JB, Ackerman WE, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. Chicago, IL: American Medical Association; 2014.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">2. Lozano-Calder&oacute;n S, Anthony S, Ring D. The quality and strength of evidence for etiology: example of carpal tunnel syndrome. J Hand Surg Am. 2008;33(4):525&ndash;538.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">3. Brooks CN, Melhorn JM. Apportionment (Chapter 5). In: AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:139&ndash;148.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:36px 0 0;">
+      <div></div>
+      <div style="max-width:820px; border-top:1px solid #D7E2EF; padding-top:24px; display:flex; flex-direction:column; gap:10px;">
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;"><strong style="color:#566579; font-weight:600;">Independence and disclaimer.</strong> OpenCausation.org&trade; is an independent, open, noncommercial educational resource. It is not affiliated with, endorsed by, or a product of the American Medical Association.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;">The information provided is for general educational purposes only and does not constitute medical advice, legal advice, or a case-specific causation or apportionment opinion. Real-world causation and apportionment determinations require an objective diagnosis, complete records, clinical judgment, exposure analysis, relevant scientific evidence, consideration of alternative explanations, and application of the legal standards of the appropriate jurisdiction.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6; font-style:italic;">This illustration is hypothetical and provided for educational purposes only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:56px 0 80px;">
+      <a href="Legal Standards V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">&larr; Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">The Legal Standards</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Burdens of proof, RR 2.0, and admissibility.</span>
+      </a>
+      <a href="Low Back Pain V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next &rarr;</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Low Back Pain</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Example 02 &mdash; the constitutional baseline.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer style="background:#143C68; color:#9DB0C8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis &mdash; free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org&trade; is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org&trade; was created to make causation analysis more transparent, consistent, and evidence-based &mdash; a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- TOP STRIP -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span></span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Low Back Pain V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">Examples</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">References</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">The method →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- EXAMPLE SWITCHER -->
+  <div style="background:#FFFFFF; border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:12px 48px; display:flex; align-items:center; gap:22px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.06em;">
+      <span style="text-transform:uppercase; letter-spacing:0.12em; color:#93A2B4; font-size:10.5px;">Examples</span>
+      <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; color:#566579; padding-bottom:3px; border-bottom:2px solid transparent;" style-hover="color:var(--accent,#1E66BA);">01 Carpal Tunnel Syndrome</a>
+      <a href="Low Back Pain V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); border-bottom:2px solid var(--accent,#1E66BA); padding-bottom:3px;">02 Low Back Pain</a>
+      <a href="Shoulder Rotator Cuff V2.dc.html" style="text-decoration:none; color:#566579; padding-bottom:3px; border-bottom:2px solid transparent;" style-hover="color:var(--accent,#1E66BA);">03 Shoulder &amp; Rotator Cuff</a>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:72px 0 0;">
+      <div><a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a></div>
+      <div style="max-width:760px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Example 02 — the constitutional baseline</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:58px; line-height:1.06; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">Low back pain.</h1>
+        <p style="margin:24px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:22px; line-height:1.5; color:var(--accent,#1E66BA); font-weight:400;">Causation and apportionment of nonspecific low back pain.</p>
+        <p style="margin:22px 0 0; font-size:19px; line-height:1.68; color:#3B4A5E; font-weight:300;">Low back pain is a useful teaching example because it is common, familiar, and frequently misunderstood. It is a multifactorial condition influenced by anatomy, age, baseline degeneration, physical conditioning, individual risk factors, medical comorbidities, psychosocial factors, and, in some cases, occupational exposure. Because low back pain often occurs during employment and is commonly triggered by ordinary activities, it is easy to assume that a work event or work activity is the cause simply because symptoms appeared or worsened at work.</p>
+        <p style="margin:16px 0 0; font-size:19px; line-height:1.68; color:#3B4A5E; font-weight:300;">A credible causation analysis must move beyond that assumption. The question is not only whether low back pain exists, but whether there is an objective and clinically relevant diagnosis, whether the actual exposure is a recognized and sufficient risk factor, whether the timing is biologically appropriate, and whether non-occupational factors or competing explanations have been fairly considered. <em style="font-style:italic; color:#0C2547;">The method decides; the assumption does not.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-01 DIAGNOSIS -->
+  <section id="diagnosis" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-01</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The diagnosis</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Most low back pain is nonspecific.</h2>
+        <p style="margin:0 0 20px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Most low back pain is nonspecific: pain in the lumbar region that cannot be attributed to a specific, reliably diagnosed anatomic source. The lifetime prevalence of nonspecific low back pain reaches roughly 80%, annual prevalence runs between 25% and 60%, and most people who have an activity-limiting episode go on to recur. It is, in short, a near-universal human experience rather than a marker of a discrete injury.</p>
+        <p style="margin:0; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">That has a direct consequence for Step 1 of the causation method. Because there is no agreed, reliable way to diagnose most low back pain to a specific structure, and because the symptom is so common at baseline, a credible analysis cannot lean on the complaint alone — and, as the next sections show, it cannot lean on imaging either.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-02 ASSUMPTION VS EVIDENCE -->
+  <section id="assumption" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-02</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Assumption vs. evidence</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The popular assumption versus the evidence.</h2>
+        <p style="margin:0 0 14px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Two assumptions dominate lay and clinical thinking. The first is that heavy physical work wears out the spine — the &ldquo;wear and tear&rdquo; model of disc degeneration. The second is that a degenerative finding on a scan proves a work injury. Modern evidence has undermined both. Twin studies have shown that disc degeneration is determined largely by genetics, with occupational and sport-related physical loading playing a relatively minor role. And degenerative changes on imaging — which are nearly universal in adults — have little relationship to symptoms or reported disability.</p>
+        <p style="margin:0 0 24px; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Batti&eacute; MC, Videman T, Kaprio J, et al. The Twin Spine Study: contributions to a changing view of disc degeneration. Spine J. 2009;9(1):47-59. PMID: 19111259; and Batti&eacute; MC, Videman T, Lev&auml;lahti E, Gill K, Kaprio J. Genetic and environmental effects on disc degeneration by phenotype and spinal level: a multivariate twin study. Spine (Phila Pa 1976). 2008;33(25):2801-2808. PMID: 19050586.</p>
+        <div style="padding:26px 30px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">The evidence in one line</div>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">Disc degeneration is largely genetic; it is nearly universal with age; and it does not explain low back pain symptoms or disability. The presence of nonspecific low back pain cannot be construed as indicative of a low back injury.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-03 GRADING -->
+  <section id="grading" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-03</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">How the evidence is graded</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Reading the risk-factor tables.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The tables below use the strength-of-evidence labels from the base reference. As with every condition page, a label describes how good the evidence is, not how important a factor is in a given person.</p>
+        <div style="border-top:1px solid #0C2547;">
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#1E8A5B;"><span style="width:8px; height:8px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong / Strong</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studies consistently establish the factor (relative risk &gt; 2.0 for strong tiers).</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:8px; height:8px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Some evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Limited but real support.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Low risk evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">A low-risk factor (relative risk &lt; 2.0); below the more-likely-than-not threshold alone.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient evidence</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Too few or too weak or too inconsistent studies to draw a conclusion.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; border-bottom:1px solid #D7E2EF; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#B8791A;"><span style="width:8px; height:8px; border-radius:50%; background:#B8791A; flex:none;"></span>Conflicting</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studies of comparable quality disagree; no conclusion is possible.</span></div>
+          <div style="display:grid; grid-template-columns:220px 1fr; gap:24px; padding:14px 0; align-items:baseline;"><span style="display:inline-flex; align-items:center; gap:9px; font-family:'Archivo',sans-serif; font-size:13.5px; font-weight:600; color:#6C7D93;"><span style="width:8px; height:8px; border-radius:50%; background:#6C7D93; flex:none;"></span>No association</span><span style="font-size:15px; line-height:1.5; color:#566579; font-weight:300;">Studied, with no statistically significant association found.</span></div>
+        </div>
+        <p style="margin:16px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Colors are a reading aid only — green = established, blue = some, amber = weak/unresolved, grey = no association. No judgment about any individual claim is implied. (Melhorn JM, Hegmann KT, Talmage JB, Hyman MH, Ackerman WE III. Chapter 4 Methodology. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:115-138.)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-04 OCCUPATIONAL -->
+  <section id="occupational" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-04</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Occupational and activity risk factors</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Where the occupational evidence runs out.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">This is where low back pain differs most sharply from the carpal tunnel example. The occupational physical factors so often blamed for back pain — heavy lifting, bending, twisting, awkward postures — rate mostly insufficient. The studies are heterogeneous, exposures are hard to quantify, workers face many factors at once, and most measured associations are weak or non-significant.</p>
+        <div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:0 0 10px; border-bottom:2px solid #0C2547; font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4;"><span>Factor</span><span>Evidence</span><span>Note</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Heavy physical work (lifting, carrying)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Most associations weak or non-significant; occasional weak signals.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Awkward postures at work</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Trunk flexion (bending)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Only weak associations in subgroups.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Twisting / trunk rotation</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 150px 1.4fr; gap:20px; padding:13px 0; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Prolonged sitting / sedentary work</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#B8791A;"><span style="width:7px; height:7px; border-radius:50%; background:#B8791A; flex:none;"></span>Insufficient</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">&mdash;</span></div>
+        </div>
+        <p style="margin:16px 0 22px; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Occupational and activity risk factors for nonspecific low back pain (Eskay-Auerbach M, Talmage JB. Spine, Chapter 8. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:243-356.). Heavy physical work rates insufficient overall.</p>
+        <p style="margin:0; font-size:17px; line-height:1.68; color:#3B4A5E; font-weight:300;">More than 100 potential risk factors for low back pain have been proposed. The difficulty is not a shortage of candidates but a shortage of consistent evidence: relatively few cohort studies, exposures that resist measurement, and workers exposed to many factors simultaneously without adequate control. The honest reading is that the occupational physical contribution to nonspecific low back pain is, at most, weak and inconsistently demonstrated.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-05 PERSONAL FACTORS -->
+  <section id="nonoccupational" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-05</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Personal and non-occupational factors</div>
+      </div>
+      <div style="max-width:760px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Led by genetics — with a caveat.</h2>
+        <p style="margin:0 0 28px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">The personal picture is led by genetics — but with an essential caveat that defines low back pain causation: the factor most strongly tied to disc degeneration is not the factor that explains the pain.</p>
+        <div>
+          <div style="display:grid; grid-template-columns:1.3fr 170px 1.3fr; gap:20px; padding:0 0 10px; border-bottom:2px solid #0C2547; font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#93A2B4;"><span>Factor</span><span>Evidence</span><span>Note</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 170px 1.3fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Genetics (disc degeneration)</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#1E8A5B;"><span style="width:7px; height:7px; border-radius:50%; background:#1E8A5B; flex:none;"></span>Very strong</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Twin studies; the dominant determinant of degeneration.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 170px 1.3fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Psychosocial factors / distress</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Predictive of disability</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Work perception and distress predict LBP-related disability.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 170px 1.3fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Prior history of low back pain</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:var(--accent,#1E66BA);"><span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#1E66BA); flex:none;"></span>Recurrence common</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Most episodes recur (24&ndash;80% at one year).</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 170px 1.3fr; gap:20px; padding:13px 0; border-bottom:1px solid #E5EEF7; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Age</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#6C7D93;"><span style="width:7px; height:7px; border-radius:50%; background:#6C7D93; flex:none;"></span>No association</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">Degeneration rises with age, but LBP incidence does not track it.</span></div>
+          <div style="display:grid; grid-template-columns:1.3fr 170px 1.3fr; gap:20px; padding:13px 0; align-items:baseline;"><span style="font-family:'Spectral',serif; font-size:16px; color:#0C2547;">Sex / gender</span><span style="display:inline-flex; align-items:center; gap:7px; font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; color:#6C7D93;"><span style="width:7px; height:7px; border-radius:50%; background:#6C7D93; flex:none;"></span>No association</span><span style="font-size:13.5px; line-height:1.5; color:#8894A6; font-weight:300;">No significant association with LBP incidence.</span></div>
+        </div>
+        <p style="margin:16px 0 24px; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Personal factors for nonspecific low back pain (Eskay-Auerbach M, Talmage JB. Spine, Chapter 8. In: Melhorn JM, Ackerman WE III, Talmage JB, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:243-356.).</p>
+        <div style="padding:26px 30px; background:#E8F1FB; border-left:2px solid var(--accent,#1E66BA);">
+          <div style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:10px;">The decisive caveat: degeneration is not pain</div>
+          <p style="margin:0; font-size:16.5px; line-height:1.68; color:#3B4A5E; font-weight:300;">Degenerative change is strongly genetic and nearly universal with age — yet cohort studies find no significant association between age (or sex) and the incidence of low back pain, and imaging pathology shows little relationship to symptoms. Degeneration and pain are decoupled. Meanwhile, psychosocial factors are among the strongest predictors of who develops persistent, disabling low back pain. The biology that is easiest to see on a scan is not the biology that drives the disability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-06 IMAGING TRAP -->
+  <section id="imaging" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-06</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">The imaging trap</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">A finding is not an injury.</h2>
+        <p style="margin:0 0 26px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">No issue causes more error in low back causation than imaging. A lumbar MRI in an adult with back pain will almost always show something — disc degeneration, bulges, protrusions, stenosis. It is tempting to treat those findings as the cause of the pain and as proof of injury. The evidence does not support that step.</p>
+        <div style="border-top:1px solid #D7E2EF;">
+          <div style="padding:16px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Degenerative findings are nearly universal.</strong> Radiographic disc degeneration is almost ubiquitous in adults, present in people with and without pain alike.</p></div>
+          <div style="padding:16px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Imaging does not explain symptoms.</strong> Pathology on MRI shows little relationship to symptoms or disability, and there is no consensus that degenerative disc disease on imaging is associated with low back pain.</p></div>
+          <div style="padding:16px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">A finding is not an injury.</strong> Nonspecific low back pain has not been shown to correlate with specific anatomic changes consistent with tissue damage; the presence of nonspecific low back pain cannot be construed as indicative of a low back injury.</p></div>
+          <div style="padding:16px 0;"><p style="margin:0; font-size:16px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Timing matters.</strong> Degenerative change develops over years and predates any claimed event; a scan taken after an incident typically shows the constitutional state of the spine, not damage from the incident.</p></div>
+        </div>
+        <p style="margin:22px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:18px; line-height:1.6; color:#566579; font-weight:300;">The practical rule: a degenerative MRI finding, by itself, neither diagnoses the cause of the pain nor establishes a work injury. It must be interpreted against the near-universal background rate and the clinical course — exactly what Steps 4 and 5 of the method require.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-07 SIX-STEP -->
+  <section id="sixstep" style="scroll-margin-top:88px; background:#E8F1FB; color:#3B4A5E; margin-top:76px;">
+    <div style="max-width:1180px; margin:0 auto; padding:76px 48px;">
+      <div style="display:grid; grid-template-columns:180px 1fr; gap:48px;">
+        <div style="padding-top:8px;">
+          <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-07</div>
+          <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5A6779; margin-top:8px; line-height:1.5;">Applying the AMA six-step method &mdash; an illustration</div>
+        </div>
+        <div style="max-width:760px;">
+          <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">The method, walked through.</h2>
+          <p style="margin:0 0 34px; font-size:18px; line-height:1.7; color:#3B4A5E; font-weight:300;">Consider an illustrative claim: a 45-year-old warehouse worker reports low back pain after lifting a box. A lumbar MRI shows multilevel degenerative disc disease and a disc bulge. He has had prior episodes of back pain and reports significant job dissatisfaction.</p>
+          <div style="background:#FFFFFF; border:1px solid #D7E2EF;">
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">1</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evidence of disease.</strong> The diagnosis is nonspecific low back pain. The MRI degeneration is near-universal for his age and does not, by itself, establish a diagnosis of injury.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">2</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Epidemiologic data.</strong> The claimed cause is occupational lifting, for which the evidence as a cause of low back pain is insufficient. The literature does not establish lifting as a probable cause.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">3</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evidence of exposure.</strong> Even granting the lifting event, the exposure does not match an established causal risk; a single lifting incident is more consistent with a temporary exacerbation than a structural injury.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">4</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Other relevant factors.</strong> Genetic disc degeneration (the dominant driver of his imaging findings), prior episodes (high recurrence), and job dissatisfaction (a predictor of disability) better explain the presentation than the lift.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px; border-bottom:1px solid #D7E2EF;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">5</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Validity of evidence.</strong> The degenerative findings predate the event and do not correlate with symptoms; corroborate the prior-episode history against pre-claim records; weigh the psychosocial contribution honestly.</p></div>
+            <div style="display:grid; grid-template-columns:52px 1fr; gap:18px; padding:20px 24px;"><span style="font-family:'Spectral',serif; font-size:22px; font-weight:300; color:var(--accent,#1E66BA);">6</span><p style="margin:0; font-size:15.5px; line-height:1.6; color:#223349;"><strong style="font-weight:600; color:#0C2547;">Evaluation and conclusion.</strong> On this evidence, the degenerative findings are constitutional rather than injury. A work event may have caused a temporary exacerbation that recovers; absent objective evidence of structural injury, a permanent work-related aggravation is not established. The conclusion follows the method, not the scan.</p></div>
+          </div>
+          <p style="margin:28px 0 0; font-family:'Spectral',serif; font-style:italic; font-size:19px; line-height:1.55; color:#3B4A5E; font-weight:300;"><span style="font-family:'Archivo',sans-serif; font-style:normal; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA);">The exacerbation/aggravation hinge.</span> Most work-associated low back pain is a temporary exacerbation of a constitutional condition — the person returns to baseline. A permanent aggravation requires evidence the baseline genuinely and lastingly changed. That distinction, drawn honestly, decides most low back claims.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LBP-08 APPORTIONMENT -->
+  <section id="apportionment" style="scroll-margin-top:88px; max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div style="padding-top:8px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">LBP-08</div>
+        <div style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; margin-top:8px; line-height:1.5;">Apportionment</div>
+      </div>
+      <div style="max-width:720px; border-top:1px solid #D7E2EF; padding-top:32px;">
+        <h2 style="margin:0 0 22px; font-family:'Spectral',serif; font-size:34px; line-height:1.1; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Where several probable contributors coexist.</h2>
+        <p style="margin:0 0 26px; font-size:18px; line-height:1.72; color:#223349; font-weight:300;">Low back pain is a frequent subject of apportionment because so many probable contributors coexist — constitutional degeneration, prior episodes, psychosocial factors, aging, and any genuine acute event. The apportionment companion&rsquo;s carpenter example is itself a low-back case: three injuries, each scored by its lasting effect on pain, with an exacerbation that recovered contributing nothing permanent.</p>
+        <div style="border-top:1px solid #D7E2EF;">
+          <div style="padding:18px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Constitutional baseline.</strong> Genetic, age-related degeneration is typically a pre-existing factor; whether it is apportionable depends on the venue&rsquo;s rules for symptomatic and disabling pre-existing conditions.</p></div>
+          <div style="padding:18px 0; border-bottom:1px solid #D7E2EF;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Aggravation versus exacerbation.</strong> A temporary exacerbation that resolves usually carries no permanent share; a true, lasting aggravation does.</p></div>
+          <div style="padding:18px 0;"><p style="margin:0; font-size:16.5px; line-height:1.6; color:#3B4A5E; font-weight:300;"><strong style="color:#0C2547; font-weight:600;">Decline when you must.</strong> With multiple injuries and no rational basis to separate them, the evaluator should apportion only what the evidence supports and otherwise defer — never invent percentages.</p></div>
+        </div>
+        <p style="margin:18px 0 0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.65; color:#8894A6;">Brooks CN, Melhorn JM. Apportionment (Chapter 5). In: AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:139&ndash;148.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM LINE -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:76px 0 0;">
+      <div></div>
+      <div style="max-width:720px; background:#143C68; padding:44px 48px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#4E96DE; margin-bottom:18px;">Bottom line</div>
+        <p style="margin:0; font-family:'Spectral',serif; font-size:21px; line-height:1.55; font-weight:300; color:#EAF1F9;">Low back pain is the strongest test of whether causation is being decided by evidence or by assumption. The wear-and-tear model is largely unsupported; the occupational physical factors rate mostly insufficient; disc degeneration is genetic and nearly universal; and imaging findings neither explain the pain nor prove an injury. Psychosocial factors, not anatomy, best predict who becomes disabled. In any individual case, the answer turns on recognizing the constitutional background, distinguishing a temporary exacerbation from a lasting aggravation, and weighing the non-occupational contributors honestly. <span style="color:#4E96DE;">As always, the method decides — and for low back pain it decides against the easy assumption more often than not.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:64px 0 0;">
+      <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4; padding-top:8px;">References</div>
+      <div style="max-width:820px; border-top:1px solid #D7E2EF; padding-top:24px; display:flex; flex-direction:column; gap:12px;">
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">1. Spine (Chapter 8). In: Melhorn JM, Talmage JB, Ackerman WE, Hyman MH, eds. AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. Chicago, IL: American Medical Association; 2014:185&ndash;242.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">2. Batti&eacute; MC, Videman T, et al. The Twin Spine Study and the heritability of disc degeneration (as discussed in Chapter 8).</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.6; color:#6C7D93;">3. Brooks CN, Melhorn JM. Apportionment (Chapter 5). In: AMA Guides to the Evaluation of Disease and Injury Causation. 2nd ed. American Medical Association; 2014:139&ndash;148.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:36px 0 0;">
+      <div></div>
+      <div style="max-width:820px; border-top:1px solid #D7E2EF; padding-top:24px; display:flex; flex-direction:column; gap:10px;">
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;"><strong style="color:#566579; font-weight:600;">Independence and disclaimer.</strong> OpenCausation.org&trade; is an independent, open, noncommercial educational resource. It is not affiliated with, endorsed by, or a product of the American Medical Association.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6;">The information provided is for general educational purposes only and does not constitute medical advice, legal advice, or a case-specific causation or apportionment opinion. Real-world causation and apportionment determinations require an objective diagnosis, complete records, clinical judgment, exposure analysis, relevant scientific evidence, consideration of alternative explanations, and application of the legal standards of the appropriate jurisdiction.</p>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-size:12.5px; line-height:1.7; color:#8894A6; font-style:italic;">This illustration is hypothetical and provided for educational purposes only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:56px 0 80px;">
+      <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">&larr; Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Carpal Tunnel Syndrome</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Example 01 &mdash; the method applied.</span>
+      </a>
+      <a href="Shoulder Rotator Cuff V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next &rarr;</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Shoulder &amp; Rotator Cuff</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Example 03 &mdash; the balanced case.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer style="background:#143C68; color:#9DB0C8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #2C5080;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #367EDE; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#367EDE; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#EAF1F9;">OpenCausation<span style="color:#4E96DE;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:56px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Shoulder / Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#98ACC8; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Glossary</a><a href="References V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">Key references</a><a href="About V2.dc.html" style="color:#9CAFC5; text-decoration:none;" style-hover="color:#EAF1F9;">About &amp; mission</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#98ACC8; font-weight:400; max-width:980px;">OpenCausation.org&trade; is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Worked examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #2C5080; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#9CAFC5; font-weight:300;">OpenCausation.org&trade; was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
