@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6FAFE; }
+  ::selection { background: #CFE0F4; color: #0C2547; }
+</style>
+</helmet>
+
+<div style="--accent:#1E66BA; --accent-deep:#063672; --accent-tint:#DEEAF6; background:#F6FAFE; font-family:'Spectral',Georgia,serif; color:#0C2547; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+<div style="{{ themeVars }}">
+
+  <!-- TOP STRIP -->
+  <div style="border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 48px; display:flex; align-items:center; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#8894A6;">
+      <span>An open, noncommercial educational resource</span>
+    </div>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:blur(10px); border-bottom:1px solid #D7E2EF;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 48px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="OpenCausation Home V2.dc.html" style="display:flex; align-items:center; gap:13px; text-decoration:none;">
+        <span style="width:27px; height:27px; border:1.5px solid #0C2547; display:inline-flex; flex-direction:column; align-items:stretch; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:var(--accent,#1E66BA); display:block;"></span></span>
+        <span style="font-family:'Spectral',serif; font-size:21px; font-weight:500; letter-spacing:-0.01em; color:#063672;">OpenCausation<span style="color:#367EDE; font-weight:400;">.org</span></span>
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 16px; font-family:'Archivo',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.02em; color:#566579; white-space:nowrap;">
+        <a href="Fundamentals V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Fundamentals</a>
+        <a href="The Methodology V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Method</a>
+        <a href="Bradford Hill V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Bradford Hill</a>
+        <a href="Legal Standards V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">The Legal Standards</a>
+        <a href="Examples V2.dc.html" style="text-decoration:none; color:var(--accent,#1E66BA); font-weight:600;">Examples</a>
+        <a href="Glossary V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Glossary</a>
+        <a href="References V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">Sources</a>
+        <a href="About V2.dc.html" style="text-decoration:none; color:inherit;" style-hover="color:var(--accent,#1E66BA);">About</a>
+      <a href="References V2.dc.html" style="text-decoration:none; color:#FFFFFF; background:var(--accent,#1E66BA); font-weight:600; padding:9px 16px; letter-spacing:0.02em; white-space:nowrap;" style-hover="background:var(--accent-deep,#063672);">Sources →</a>
+      
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:78px 0 0;">
+      <div><a href="OpenCausation Home V2.dc.html" style="font-family:'Archivo',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#93A2B4; text-decoration:none;" style-hover="color:var(--accent,#1E66BA);">← Home</a></div>
+      <div style="max-width:820px;">
+        <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent,#1E66BA); margin-bottom:24px;">Applying the method</div>
+        <h1 style="margin:0; font-family:'Spectral',serif; font-size:62px; line-height:1.04; font-weight:400; letter-spacing:-0.022em; color:#0C2547;">Three common diagnoses.</h1>
+        <p style="margin:26px 0 0; max-width:760px; font-size:20px; line-height:1.66; color:#3B4A5E; font-weight:300;">The following three examples illustrate how the same neutral causation method can produce different conclusions when applied to different diagnoses, exposures, and bodies of evidence. That is not a weakness of the method; it is the purpose of the method. A scientifically structured analysis should not predictably favor relatedness, non-relatedness, or apportionment. Instead, it should follow the evidence wherever it leads — sometimes supporting work-relatedness, sometimes failing to support it, and sometimes leaving the question unresolved. These examples demonstrate how the same framework can be applied consistently while producing different, evidence-dependent conclusions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGNOSIS CARDS -->
+  <section style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:52px 0 0;">
+      <div></div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
+        <sc-for list="{{ cards }}" as="c" hint-placeholder-count="3">
+          <a href="{{ c.href }}" style="background:#FFFFFF; border:1px solid #D7E2EF; display:flex; flex-direction:column; text-decoration:none; color:inherit;" style-hover="border-color:var(--accent,#1E66BA);">
+            <div style="padding:24px 26px 22px; border-bottom:1px solid #D7E2EF;">
+              <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent,#1E66BA);">{{ c.kicker }}</span>
+              <h3 style="margin:9px 0 0; font-family:'Spectral',serif; font-size:25px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">{{ c.name }}</h3>
+            </div>
+            <div style="padding:22px 26px 24px; flex:1; display:flex; flex-direction:column;">
+              <p style="margin:0 0 20px; font-size:15.5px; line-height:1.58; color:#3B4A5E; font-weight:300; flex:1;">{{ c.blurb }}</p>
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding-top:16px; border-top:1px solid #E5EEF7;">
+                <span style="font-family:'Spectral',serif; font-style:italic; font-size:15.5px; color:var(--accent,#1E66BA);">{{ c.verdict }}</span>
+                <span style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--accent,#1E66BA);">Read&nbsp;&rarr;</span>
+              </div>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:180px 1fr; gap:48px; padding:34px 0 0;">
+      <div></div>
+      <div style="max-width:820px;">
+        <p style="margin:0; font-family:'Spectral',serif; font-style:italic; font-size:20px; line-height:1.5; color:#0C2547; font-weight:300;">Same neutral method, three different conclusions. <span style="color:var(--accent,#1E66BA);">That contrast is the point.</span> The method is neutral because it is applied the same way in each case — not because it produces the same result.</p>
+        <p style="margin:18px 0 0; max-width:900px; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.7; color:#8894A6; font-weight:400;">These examples are provided for general educational and illustrative purposes only. They are not intended to describe, evaluate, or determine causation in any specific individual case. Any case-specific causation analysis must be based on the particular diagnosis, exposure history, medical record, scientific literature, and applicable legal or administrative standard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <nav aria-label="Page navigation" style="max-width:1180px; margin:0 auto; padding:0 48px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:70px 0 80px;">
+      <a href="Legal Standards V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#93A2B4;">← Previous</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">The Legal Standards</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Burdens of proof, RR 2.0, and admissibility.</span>
+      </a>
+      <a href="Carpal Tunnel V2.dc.html" style="text-decoration:none; border:1px solid #D7E2EF; background:#FFFFFF; padding:24px 28px; display:flex; flex-direction:column; gap:7px; text-align:right; align-items:flex-end;" style-hover="border-color:var(--accent,#1E66BA);">
+        <span style="font-family:'Archivo',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent,#1E66BA);">Next →</span>
+        <span style="font-family:'Spectral',serif; font-size:23px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">Carpal Tunnel Syndrome</span>
+        <span style="font-family:'Spectral',serif; font-size:14.5px; color:#8894A6; font-weight:300;">Example 01 — the method applied.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer style="background:#E8F1FB; color:#3B4A5E;">
+    <div style="height:10px; background:#143C68;"></div>
+    <div style="max-width:1180px; margin:0 auto; padding:60px 48px 44px;">
+      <div style="display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid #C7D6E8;">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="width:25px; height:25px; border:1.5px solid #1E66BA; display:inline-flex; flex-direction:column; justify-content:center; padding:0 4px;"><span style="height:1.5px; background:#1E66BA; display:block;"></span></span>
+            <span style="font-family:'Spectral',serif; font-size:19px; font-weight:500; color:#0C2547;">OpenCausation<span style="color:#1E66BA;">.org</span></span>
+          </div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; font-weight:300; color:#3B4A5E;">A foundational, open resource on the science of causation analysis — free, noncommercial, and built to be read by anyone.</p>
+        </div>
+        <div style="display:flex; gap:52px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Home</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="OpenCausation Home V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Overview</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Learn</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Legal Standards</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Examples</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Shoulder Rotator Cuff</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Resources</div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Glossary V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Glossary</a><a href="References V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Sources</a><a href="About V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">About</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#5A6779; font-weight:400; max-width:980px;">OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Case examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #C7D6E8; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#566579; font-weight:300;">OpenCausation.org™ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+    </div>
+  </footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:900},&quot;accentTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Causation Blue&quot;,&quot;Deep Navy&quot;,&quot;Bright&quot;],&quot;default&quot;:&quot;Causation Blue&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accentThemes = {
+      'Causation Blue': ['#1E66BA', '#063672', '#DEEAF6'],
+      'Deep Navy':      ['#063672', '#062A5A', '#DEEAF6'],
+      'Bright':         ['#367EDE', '#1E66BA', '#DEEAF6'],
+    };
+    const themeName = this.props.accentTheme || 'Causation Blue';
+    const [a, d, t] = accentThemes[themeName] || accentThemes['Causation Blue'];
+    const themeVars = `--accent:${a}; --accent-deep:${d}; --accent-tint:${t};`;
+
+    const cards = [
+      { kicker: 'Example 01 — the method applied', name: 'Carpal Tunnel Syndrome', href: 'Carpal Tunnel V2.dc.html',
+        blurb: 'Commonly assumed to be a typing injury, but two decades of research point elsewhere. Biological factors — age, sex, obesity, diabetes — outweigh occupational ones, and the method usually points away from work.',
+        verdict: 'Usually not work-related' },
+      { kicker: 'Example 02 — the method applied', name: 'Low Back Pain', href: 'Low Back Pain V2.dc.html',
+        blurb: 'Most low back pain is nonspecific; disc degeneration is largely genetic and near-universal with age. Imaging findings do not, by themselves, establish injury.',
+        verdict: 'Largely constitutional' },
+      { kicker: 'Example 03 — the method applied', name: 'Shoulder Rotator Cuff', href: 'Shoulder Rotator Cuff V2.dc.html',
+        blurb: 'A genuine occupational factor — sustained awkward and overhead posture — sits beside strong constitutional ones. The method usually produces a real, evidence-based apportionment.',
+        verdict: 'Genuinely multifactorial' },
+    ];
+
+    return { themeVars, cards };
+  }
+}
+</script>
+</body>
+</html>
