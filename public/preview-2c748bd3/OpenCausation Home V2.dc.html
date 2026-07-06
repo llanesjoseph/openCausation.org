@@ -159,7 +159,7 @@
             <span style="font-family:'Spectral',serif; font-size:23px; color:#0C2547;">Relative risk, and the 2.0 threshold</span>
             <sc-if value="{{ showExhibitTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'Archivo',sans-serif; font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8695A9;">Exhibit · live</span></sc-if>
           </div>
-          <p style="margin:0 0 26px; font-size:15.5px; line-height:1.55; color:#5A6779; font-weight:300; max-width:560px;">At a relative risk of 2.0, half of the disease among exposed individuals is attributable to the exposure — the point at which the association reaches the "more likely than not" threshold. Move the slider to see how the attributable fraction changes.</p>
+          <p style="margin:0 0 26px; font-size:15.5px; line-height:1.55; color:#5A6779; font-weight:300; max-width:560px;">At relative risk (RR) 2.0, the attributable fraction reaches 50%; above RR 2.0, it exceeds the more-likely-than-not threshold. Move the slider to see how the attributable fraction changes.</p>
           <div style="display:flex; gap:44px; align-items:center;">
             <div style="flex:1;">
               <div style="display:flex; justify-content:space-between; font-family:'Archivo',sans-serif; font-size:12px; color:#5A6779; margin-bottom:12px;">
@@ -191,11 +191,11 @@
       <div>
         <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent,#1E66BA);">Intro-05</div>
         <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#93A2B4; margin-top:8px;">Common Pitfalls</div>
-        <h2 style="margin:18px 0 0; font-family:'Spectral',serif; font-size:34px; line-height:1.08; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Three common patterns that distort causation opinions.</h2>
+        <h2 style="margin:18px 0 0; font-family:'Spectral',serif; font-size:34px; line-height:1.08; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Four common patterns that distort causation opinions.</h2>
         <a href="Fundamentals V2.dc.html#traps" style="display:inline-block; margin-top:24px; text-decoration:none; font-family:'Archivo',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.03em; color:#FFFFFF; background:var(--accent,#1E66BA); padding:13px 22px;" style-hover="background:var(--accent-deep,#063672);">See common pitfalls →</a>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
-        <sc-for list="{{ traps }}" as="t" hint-placeholder-count="3">
+      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:18px;">
+        <sc-for list="{{ traps }}" as="t" hint-placeholder-count="4">
           <div style="border:1px solid #D7E2EF; background:#EFF4FA; padding:26px 24px 28px;">
             <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; color:var(--accent,#1E66BA); margin-bottom:14px;">{{ t.num }}</div>
             <h3 style="margin:0 0 10px; font-family:'Spectral',serif; font-size:21px; font-weight:500; color:#0C2547; letter-spacing:-0.01em;">{{ t.title }}</h3>
@@ -245,7 +245,7 @@
       <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent,#1E66BA);">Intro-07</div>
       <div style="font-family:'Archivo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#93A2B4; margin-top:8px; margin-bottom:14px;">Bradford Hill</div>
       <h2 style="margin:0 0 16px; font-family:'Spectral',serif; font-size:44px; line-height:1.06; font-weight:400; letter-spacing:-0.02em; color:#0C2547;">Nine considerations — <em style="font-style:italic; color:var(--accent,#1E66BA);">weighed,</em> never tallied.</h2>
-      <p style="margin:0; font-size:18px; line-height:1.6; color:#3B4A5E; font-weight:300;">Bradford Hill's nine viewpoints help assess whether an association may be causal. They are not a checklist or scoring system. Causation is assessed along a continuum, with each viewpoint weighed in context. In occupational analysis, strength of association, temporality, and dose-response often carry the greatest practical weight.</p>
+      <p style="margin:0; font-size:18px; line-height:1.6; color:#3B4A5E; font-weight:300;">Bradford Hill's nine viewpoints help assess whether an association may be causal. They are not a checklist or scoring system. Causation is assessed along a continuum, with each viewpoint weighed in context. In occupational analysis, temporality, strength of association, and dose-response often carry the greatest practical weight.</p>
     </div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
       <sc-for list="{{ hill }}" as="h" hint-placeholder-count="9">
@@ -329,7 +329,7 @@
           <p style="margin:10px 0 0; font-size:17px; line-height:1.6; color:#3B4A5E; font-weight:300;">This method advocates for no party and favors no predetermined outcome. Its commitment is to method alone: a structured, evidence-based process applied the same way regardless of who performs the analysis, who requested it, or which party the conclusion may favor. The science is the science. The conclusion must follow the evidence, not the interests of the requesting party.</p>
         </div>
         <a href="About V2.dc.html" style="display:inline-block; margin-top:28px; text-decoration:none; font-family:'Archivo',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.03em; color:#FFFFFF; background:var(--accent,#1E66BA); padding:13px 22px;" style-hover="background:var(--accent-deep,#063672);">See About →</a>
-        <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.7; color:#8894A6; font-weight:400;">Adapted from <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: Principles and Best Practices for Determining Injury and Disease Relatedness</em> and <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: An Introduction to Biostatistics</em> — foundational educational source documents for OpenCausation.org™ — by J. Mark Melhorn, MD.</p>
+        <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:13px; line-height:1.7; color:#8894A6; font-weight:400;">Adapted from <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: Principles and Best Practices for Determining Injury and Disease Relatedness</em> and <em style="font-family:'Spectral',serif; font-style:italic; color:#566579;">The Science of Causation: An Introduction to Biostatistics</em> — foundational educational source documents for OpenCausation.org℠ — by J. Mark Melhorn, MD.</p>
       </div>
     </div>
   </section>
@@ -379,11 +379,11 @@
           </div>
           <div>
             <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Learn</div>
-            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Legal Standards</a></div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Fundamentals V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Fundamentals</a><a href="The Methodology V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Method</a><a href="Bradford Hill V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Bradford Hill</a><a href="Legal Standards V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">The Legal Standards</a></div>
           </div>
           <div>
             <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Examples</div>
-            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Shoulder Rotator Cuff</a></div>
+            <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px; font-weight:300;"><a href="Carpal Tunnel V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Carpal Tunnel Syndrome</a><a href="Low Back Pain V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Low Back Pain</a><a href="Shoulder Rotator Cuff V2.dc.html" style="color:#3B4A5E; text-decoration:none;" style-hover="color:#1E66BA;">Rotator Cuff Syndrome</a></div>
           </div>
           <div>
             <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1E66BA; margin-bottom:16px;">Resources</div>
@@ -391,8 +391,8 @@
           </div>
         </div>
       </div>
-      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#5A6779; font-weight:400; max-width:980px;">OpenCausation.org™ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical, legal, or case-specific causation advice. Causation determinations require an objective diagnosis, complete records, clinical judgment, reliable scientific evidence, and application of the legal standards of the relevant jurisdiction. Case examples are hypothetical and illustrative only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis.</p>
-      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #C7D6E8; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#566579; font-weight:300;">OpenCausation.org™ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
+      <p style="margin:26px 0 0; font-family:'Archivo',sans-serif; font-size:12px; line-height:1.7; color:#5A6779; font-weight:400; max-width:980px;">OpenCausation.org℠ is an independent, open, noncommercial educational project. It is not affiliated with, endorsed by, or a product of the American Medical Association. The site provides general educational information only and does not provide medical advice, legal advice, or case-specific causation or apportionment opinions. Causation determinations require an objective diagnosis, complete records, clinical judgment, exposure analysis, reliable scientific evidence, consideration of alternative explanations, and application of the legal standards of the relevant jurisdiction. Legal standards vary by jurisdiction and may change over time; the controlling law of the relevant forum governs any actual matter. Examples and illustrations are hypothetical and educational only. This resource is grounded in established causation-analysis principles, including the AMA Guides to the Evaluation of Disease and Injury Causation, 2nd ed. (2014), occupational and epidemiologic methods, and other scientific resources relevant to evidence-based causation analysis. OpenCausation™ is a Kansas-registered trademark, and OpenCausation.org℠ is a Kansas-registered service mark, owned by Causation.com, Inc.</p>
+      <p style="margin:22px 0 0; padding-top:22px; border-top:1px solid #C7D6E8; font-family:'Spectral',serif; font-style:italic; font-size:15.5px; line-height:1.6; color:#566579; font-weight:300;">OpenCausation.org℠ was created to make causation analysis more transparent, consistent, and evidence-based — a method, not a verdict.</p>
     </div>
   </footer>
 
@@ -436,9 +436,10 @@ class Component extends DCLogic {
     ].map(p => ({ num: p[0], title: p[1], desc: p[2] }));
 
     const traps = [
-      ['Trap 01', 'Post hoc, ergo propter hoc', 'The rooster\u2019s crow does not make the sun rise. The fact that a condition followed an event may raise a causation question, but timing alone does not establish cause.'],
-      ['Trap 02', 'Over-reliance on self-report', '\u201CI was fine before\u201D is frequently contradicted by the pre-claim record. Uncorroborated histories should be treated with caution and qualified.'],
-      ['Trap 03', 'Premature yes/no classification', 'Systems often demand a premature yes-or-no answer before the clinical course is known. Resist early classification that is unsupported, incomplete, or likely to persist simply because it was stated first.'],
+      ['TRAP-01', 'Failure to use a reliable methodology', 'A causation opinion is most vulnerable when it is not grounded in an established, transparent method. Under a Daubert-type analysis, an opinion without a reliable methodology can be excluded outright.'],
+      ['TRAP-02', 'Post hoc, ergo propter hoc', 'The rooster\u2019s crow does not make the sun rise. The fact that a condition followed an event may raise a causation question, but timing alone does not establish cause.'],
+      ['TRAP-03', 'Over-reliance on self-report', '\u201CI was fine before\u201D is frequently contradicted by the pre-claim record. Uncorroborated histories should be treated with caution and qualified.'],
+      ['TRAP-04', 'Premature yes/no classification', 'Systems often demand a premature yes-or-no answer before the clinical course is known. Resist early classification that is unsupported, incomplete, or likely to persist simply because it was stated first.'],
     ].map(t2 => ({ num: t2[0], title: t2[1], desc: t2[2] }));
 
     const steps = [
@@ -451,21 +452,21 @@ class Component extends DCLogic {
     ].map(s => ({ num: s[0], title: s[1], desc: s[2] }));
 
     const hill = [
-      ['HILL-01', 'Temporality', 'The exposure must precede the outcome. This is the one essential criterion, but it is never sufficient by itself.', true, 'Bradford Hill V2.dc.html#hill-01'],
-      ['HILL-02', 'Strength', 'The larger the measured association, the more likely the relationship may be causal.', true, 'Bradford Hill V2.dc.html#hill-02'],
+      ['HILL-01', 'Temporality', 'The exposure must precede the outcome. This is the one essential viewpoint, but it is never sufficient by itself.', true, 'Bradford Hill V2.dc.html#hill-01'],
+      ['HILL-02', 'Strength of association', 'The larger the measured association, the more likely the relationship may be causal.', true, 'Bradford Hill V2.dc.html#hill-02'],
       ['HILL-03', 'Dose-response', 'More exposure, more risk; less exposure, less risk.', true, 'Bradford Hill V2.dc.html#hill-03'],
       ['HILL-04', 'Consistency', 'The association is replicated across different studies, populations, and methods.', false, 'Bradford Hill V2.dc.html#hill-04'],
       ['HILL-05', 'Plausibility', 'The association fits a credible biological mechanism.', false, 'Bradford Hill V2.dc.html#hill-05'],
       ['HILL-06', 'Alternative Explanations', 'Other possible causes are examined and effectively ruled out.', false, 'Bradford Hill V2.dc.html#hill-06'],
       ['HILL-07', 'Experimental Evidence', 'The outcome is prevented, reduced, or improved by altering the exposure.', false, 'Bradford Hill V2.dc.html#hill-07'],
-      ['HILL-08', 'Specificity', 'One cause, one effect — the weakest criterion.', false, 'Bradford Hill V2.dc.html#hill-08'],
+      ['HILL-08', 'Specificity', 'One cause, one effect — the weakest viewpoint.', false, 'Bradford Hill V2.dc.html#hill-08'],
       ['HILL-09', 'Coherence', 'The association is compatible with the existing body of knowledge.', false, 'Bradford Hill V2.dc.html#hill-09'],
     ].map(h => ({ num: h[0], name: h[1], desc: h[2], key: h[3], href: h[4] }));
 
     const conditions = [
       ['Most assumed', 'Carpal Tunnel Syndrome', 'Two decades of research disagree with the keyboard assumption. Biological factors — age, sex, obesity, diabetes — outweigh occupational ones, and the method usually points away from work.', 'Usually not work-related', 'Carpal Tunnel V2.dc.html'],
       ['Most overdiagnosed', 'Low Back Pain', 'Most low back pain is nonspecific; disc degeneration is largely genetic and near-universal with age. Imaging findings do not, by themselves, establish injury.', 'A constitutional baseline', 'Low Back Pain V2.dc.html'],
-      ['The balanced case', 'Shoulder Rotator Cuff', 'A genuine occupational factor — sustained awkward posture — sits beside strong constitutional ones. The method usually produces a real apportionment.', 'Genuinely multifactorial', 'Shoulder Rotator Cuff V2.dc.html'],
+      ['The balanced case', 'Rotator Cuff Syndrome', 'A genuine occupational factor — sustained awkward posture — sits beside strong constitutional ones. The method usually produces a real apportionment.', 'Genuinely multifactorial', 'Shoulder Rotator Cuff V2.dc.html'],
     ].map(c => ({ kicker: c[0], name: c[1], blurb: c[2], verdict: c[3], href: c[4] }));
 
     const audiences = [
