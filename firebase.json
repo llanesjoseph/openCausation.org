@@ -2,10 +2,19 @@
   "hosting": {
     "site": "opencausationorg",
     "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/preview-2c748bd3{,/**}",
+        "destination": "/",
+        "type": 301
+      }
     ],
     "headers": [
       {
@@ -30,7 +39,7 @@
         ]
       },
       {
-        "source": "/preview-2c748bd3/**",
+        "source": "/coming-soon.html",
         "headers": [
           { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
         ]
