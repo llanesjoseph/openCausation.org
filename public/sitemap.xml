@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://opencausation.org/</loc></url>
-  <url><loc>https://opencausation.org/fundamentals</loc></url>
-  <url><loc>https://opencausation.org/methodology</loc></url>
-  <url><loc>https://opencausation.org/bradford-hill</loc></url>
-  <url><loc>https://opencausation.org/legal-standards</loc></url>
-  <url><loc>https://opencausation.org/examples</loc></url>
-  <url><loc>https://opencausation.org/carpal-tunnel</loc></url>
-  <url><loc>https://opencausation.org/low-back-pain</loc></url>
-  <url><loc>https://opencausation.org/rotator-cuff</loc></url>
-  <url><loc>https://opencausation.org/glossary</loc></url>
-  <url><loc>https://opencausation.org/references</loc></url>
-  <url><loc>https://opencausation.org/about</loc></url>
-  <url><loc>https://opencausation.org/terms-of-use</loc></url>
-  <url><loc>https://opencausation.org/privacy-policy</loc></url>
+  <url><loc>https://opencausation.org/</loc><lastmod>2026-07-15</lastmod><priority>1.0</priority></url>
+  <url><loc>https://opencausation.org/fundamentals</loc><lastmod>2026-07-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://opencausation.org/methodology</loc><lastmod>2026-07-15</lastmod><priority>0.9</priority></url>
+  <url><loc>https://opencausation.org/bradford-hill</loc><lastmod>2026-07-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://opencausation.org/legal-standards</loc><lastmod>2026-07-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://opencausation.org/examples</loc><lastmod>2026-07-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://opencausation.org/carpal-tunnel</loc><lastmod>2026-07-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://opencausation.org/low-back-pain</loc><lastmod>2026-07-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://opencausation.org/rotator-cuff</loc><lastmod>2026-07-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://opencausation.org/glossary</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://opencausation.org/references</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://opencausation.org/about</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
+  <url><loc>https://opencausation.org/terms-of-use</loc><lastmod>2026-07-15</lastmod><priority>0.3</priority></url>
+  <url><loc>https://opencausation.org/privacy-policy</loc><lastmod>2026-07-15</lastmod><priority>0.3</priority></url>
 </urlset>
