@@ -15,7 +15,12 @@ import re
 import pathlib
 
 SITE = "https://opencausation.org"
-OG_IMAGE = f"{SITE}/logo.png"
+# Social card: 1200x630, the size Facebook/LinkedIn/X render without cropping.
+OG_IMAGE = f"{SITE}/og-image.png"
+OG_IMAGE_W, OG_IMAGE_H = 1200, 630
+# Organization mark, sized to its largest on-page use (32px) at 4x for retina.
+LOGO = f"{SITE}/logo.png"
+LOGO_W, LOGO_H = 192, 128
 ORG_ID = f"{SITE}/#organization"
 SITE_ID = f"{SITE}/#website"
 
@@ -200,9 +205,9 @@ def jsonld(slug: str, path: str, title: str, desc: str) -> str:
             "url": SITE + "/",
             "logo": {
                 "@type": "ImageObject",
-                "url": OG_IMAGE,
-                "width": 934,
-                "height": 624,
+                "url": LOGO,
+                "width": LOGO_W,
+                "height": LOGO_H,
             },
         })
         graph.append({
@@ -258,6 +263,9 @@ def block(path: str, title: str, desc: str) -> str:
         f'<meta property="og:description" content="{d}">',
         f'<meta property="og:url" content="{url}">',
         f'<meta property="og:image" content="{OG_IMAGE}">',
+        f'<meta property="og:image:width" content="{OG_IMAGE_W}">',
+        f'<meta property="og:image:height" content="{OG_IMAGE_H}">',
+        f'<meta property="og:image:alt" content="OpenCausation.org — Causation, determined by science.">',
         '<meta name="twitter:card" content="summary_large_image">',
         f'<meta name="twitter:title" content="{t}">',
         f'<meta name="twitter:description" content="{d}">',
