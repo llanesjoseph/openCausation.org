@@ -34,3 +34,5 @@ Live at `opencausationorg.web.app`, with custom domains `opencausation.org` and 
 ./porkbun.sh list
 ./porkbun.sh point-firebase <TXT> <A_IP>   # clean slate + point at Firebase
 ```
+
+# Deploys via Workload Identity Federation — no stored credentials.
