@@ -45,8 +45,12 @@ jobs:
         with:
           node-version: 20
 
+      # Pinned: firebase-tools 15.22.2 regressed ADC/WIF auth and the CLI fails
+      # with "Failed to authenticate, have you run firebase login?" despite valid
+      # credentials. 15.22.1 is the last good version. Latest (15.23.0) is still
+      # affected. Unpin once firebase/firebase-tools#10716 is fixed and verified.
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
+        run: npm install -g firebase-tools@15.22.1
 
       # firebase-tools picks up the federated credentials via
       # GOOGLE_APPLICATION_CREDENTIALS, which the auth step exports.
