@@ -14,6 +14,11 @@
         "source": "/preview-2c748bd3{,/**}",
         "destination": "/",
         "type": 301
+      },
+      {
+        "source": "/coming-soon{,.html}",
+        "destination": "/",
+        "type": 301
       }
     ],
     "headers": [
@@ -36,12 +41,6 @@
         "source": "/index.html",
         "headers": [
           { "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" }
-        ]
-      },
-      {
-        "source": "/coming-soon.html",
-        "headers": [
-          { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
         ]
       }
     ]
