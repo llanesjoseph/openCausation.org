@@ -43,6 +43,7 @@ BREADCRUMBS = {
     "glossary": [("Home", "/")],
     "references": [("Home", "/")],
     "about": [("Home", "/")],
+    "contributors": [("Home", "/")],
     "terms-of-use": [("Home", "/")],
     "privacy-policy": [("Home", "/")],
 }
@@ -60,6 +61,7 @@ CRUMB_LABEL = {
     "glossary": "Glossary",
     "references": "Sources",
     "about": "About",
+    "contributors": "Contributors",
     "terms-of-use": "Terms of Use",
     "privacy-policy": "Privacy Policy",
 }
@@ -144,6 +146,12 @@ PAGES = {
         "About — OpenCausation.org",
         "About OpenCausation.org: a free, noncommercial educational resource on "
         "evidence-based medical causation methodology, and the people behind it.",
+    ),
+    "contributors": (
+        "/contributors",
+        "Contributors — OpenCausation.org",
+        "The clinicians, causation methodologists, and technologists who develop and "
+        "review OpenCausation.org's neutral, evidence-based causation methodology.",
     ),
     "terms-of-use": (
         "/terms-of-use",
