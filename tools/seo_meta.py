@@ -21,6 +21,14 @@ OG_IMAGE_W, OG_IMAGE_H = 1200, 630
 # Organization mark, sized to its largest on-page use (32px) at 4x for retina.
 LOGO = f"{SITE}/logo.png"
 LOGO_W, LOGO_H = 192, 128
+
+# Cloudflare Web Analytics — cookieless, no individual-visitor tracking, no
+# fingerprinting. One beacon, same on every page. Invisible to visitors.
+CF_BEACON = (
+    '<!-- Cloudflare Web Analytics -->'
+    '<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" '
+    'data-cf-beacon=\'{"token": "d5ecb426727649298c78e9302dbe1616"}\'></script>'
+)
 ORG_ID = f"{SITE}/#organization"
 SITE_ID = f"{SITE}/#website"
 
@@ -177,6 +185,7 @@ MANAGED = re.compile(
     r'|<meta\s+property="og:[^"]*"[^>]*>'
     r'|<meta\s+name="twitter:[^"]*"[^>]*>'
     r'|<script type="application/ld\+json">.*?</script>'
+    r'|<!-- Cloudflare Web Analytics --><script[^>]*data-cf-beacon[^>]*></script>'
     r')[ \t]*\n?',
     re.S | re.I,
 )
@@ -278,6 +287,7 @@ def block(path: str, title: str, desc: str) -> str:
         f'<meta name="twitter:title" content="{t}">',
         f'<meta name="twitter:description" content="{d}">',
         f'<meta name="twitter:image" content="{OG_IMAGE}">',
+        CF_BEACON,
     ]) + "\n"
 
 
